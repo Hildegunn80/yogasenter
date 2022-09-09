@@ -1,0 +1,72 @@
+.gridcontainer {
+    min-height: 100%;
+    display: grid;
+    grid-gap: 2px;
+    /*grid-template-columns: 50% 50%;*/
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-areas: 
+    'header header'
+    'boks-b boks-c'
+    'boks-d boks-d'
+    'footer footer';
+    background-color: var(--color-bg);
+    text-align: center;
+}
+
+.boks-b {
+    grid-area: boks-b;
+    background-image: url(../images/cup\ fill.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 300px;
+}
+
+.boks-d form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+}
+
+.boks-d form input {
+    max-width: 200px;
+    margin-bottom: 5px;
+}
+
+.boks-d form input[type=submit] {
+    background-color: var(--color-coffee);
+    border: none;
+    color: var(--color-ascent);
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: black;
+}
+
+.boks-c,
+.boks-d {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 200px;
+    justify-content: center;
+
+}
+
+.boks-c {
+    grid-area: boks-c;
+}
+
+.boks-c{
+    background: linear-gradient(to right, red, orange, yellow,green,indigo,violet);
+}
+
+.boks-d {
+    grid-area: boks-d;
+    padding: 5%;
+    text-align: left;
+    background-color: var(--color-bg-light);
+}
+
+
+

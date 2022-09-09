@@ -1,0 +1,80 @@
+.gridcontainer {
+    min-height: 100%;
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: 99%;
+    grid-template-areas: 
+    'header'
+    'boks-b'
+    'boks-c'
+    'boks-d'
+    'boks-e'
+    'boks-f'
+    'footer';
+    background-color: var(--color-bg);
+    text-align: center;
+}
+
+.Title {
+    background-color: var(--color-menu);
+
+}
+    .Title h2:hover {
+    color:var(--color-ascent);
+}
+
+.bilde a {
+    padding: 0px;
+}
+
+.bilde img {
+    width: 100%;
+}
+
+.bilde {
+    color: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3));
+}
+
+.description {
+    max-width: 600px;
+    margin: 0 auto;
+    padding:10px 30px 10px 30px;
+    text-align: left;
+}
+
+
+.boks-b {
+    grid-area: boks-b;
+    display: flex;
+    background: url(/images/3cups.jpg); /* fallback */
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(/images/3cups.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+}
+
+ .boks-b h1 {
+    letter-spacing: 0.2em; 
+    font-size:4.5rem;
+    color: var(--color-ascent);
+     
+    position: relative;
+    left: 6%;
+    top: 10%;     
+ }
+
+.boks-c,
+.boks-d,
+.boks-e,
+.boks-f {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+}
+
+.boks-c { grid-area: boks-c; }
+.boks-d { grid-area: boks-d; }
+.boks-e { grid-area: boks-e; }
+.boks-f { grid-area: boks-f; }
+

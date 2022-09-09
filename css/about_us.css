@@ -1,0 +1,54 @@
+.gridcontainer {
+    min-height: 100%;
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: 50% 49%;
+    grid-template-areas: 
+    'header header'
+    'boks-b boks-b'
+    'boks-c boks-d'
+    'footer footer';
+    background-color: var(--color-bg);
+    text-align: center;
+}
+
+.boks-b {
+    grid-area: boks-b;
+    display: flex;
+    background:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4)), url(../images/beans\ zoom.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+    align-items: center;
+    justify-content: center;
+}
+
+ .boks-b h1 {
+     font-size:4.5rem;
+     color: var(--color-ascent);
+ }
+
+.boks-c,
+.boks-d {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    justify-content: center;
+}
+
+.boks-c {
+    grid-area: boks-c;
+    background-color: black;
+    color: var(--color-ascent);
+}
+
+.boks-d {
+    grid-area: boks-d;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+

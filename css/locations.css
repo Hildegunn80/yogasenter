@@ -1,0 +1,113 @@
+.gridcontainer {
+    min-height: 100%;
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: 49% 49%;
+    grid-template-areas: 
+    'header header'
+    'boks-b boks-b'
+    'boks-c boks-d'
+    'boks-e boks-f'
+    'boks-g boks-h'
+    'boks-i boks-j'
+    'footer footer';
+    background-color: var(--color-bg);
+    text-align: center;
+}
+
+.boks-b {
+    grid-area: boks-b;
+    display: flex;
+    background:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.3)), url(../images/cup\ fill.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+}
+
+.boks-b h1 {
+     letter-spacing: 0.2em; 
+     font-size:4.5rem;
+     color: var(--color-ascent);
+     position: relative;
+     left: 6%;
+     top: 10%;
+ }
+
+ .boks-c a,
+ .boks-e a,
+ .boks-f a,
+ .boks-g a,
+ .boks-j a {
+    background-color: var(--color-ascent);
+    max-width: 160px;
+    align-self: center;
+    border-radius: 8px;
+    border: 2px solid whitesmoke;
+    font-size: 20px;
+ }
+
+ .boks-c a:hover,
+ .boks-e a:hover,
+ .boks-f a:hover,
+ .boks-g a:hover,
+ .boks-j a:hover {
+    background-color: rgba(255, 255, 255, 0.89);
+   
+ }
+
+
+ .boks-c i,
+ .boks-e i,
+ .boks-f i,
+ .boks-g i,
+ .boks-j i {
+    margin: 3px;
+
+ }
+
+
+.boks-c,
+.boks-d,
+.boks-e,
+.boks-f,
+.boks-g,
+.boks-h,
+.boks-i,
+.boks-j {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    justify-content: center;
+}
+
+.boks-c,
+.boks-f,
+.boks-g,
+.boks-j {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: var(--color-menu);
+}
+
+.boks-b { grid-area: boks-b; }
+.boks-c { grid-area: boks-c; }
+.boks-d { grid-area: boks-d; }
+.boks-e { grid-area: boks-e; }
+.boks-f { grid-area: boks-f; }
+.boks-g { grid-area: boks-g; }
+.boks-h { grid-area: boks-h; }
+.boks-i { grid-area: boks-i; }
+.boks-j { grid-area: boks-j; }
+
+
+/* Change sorting order to match new pattern */
+@media only screen and (max-width:1000px) {
+    .boks-e { grid-area: boks-f; }
+    .boks-f { grid-area: boks-e; }
+    .boks-i { grid-area: boks-j; }
+    .boks-j { grid-area: boks-i; }
+}
