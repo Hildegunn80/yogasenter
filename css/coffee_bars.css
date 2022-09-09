@@ -47,7 +47,7 @@
     grid-area: boks-b;
     display: flex;
     background: url(/images/3cups.jpg); /* fallback */
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(/images/3cups.jpg);
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.5)), url(/yogasenter/images/yoga-gb94f679e5_640.jpg);
     background-size: cover;
     background-position: center;
     min-height: 500px;

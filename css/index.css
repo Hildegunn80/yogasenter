@@ -18,7 +18,7 @@
     grid-area: boks-b;
     display: flex;
     flex-direction: column;
-    background-image:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url(/images/beans_back.jpg);
+    background-image:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.4)),url(/yogasenter/images/yoga-gb94f679e5_640.jpg);
     background-size: cover;
     background-position: center;
     min-height: 500px;
@@ -54,7 +54,7 @@
 .boks-e {
     grid-area: boks-e;
     position: relative;
-    background-image: url(../images/cafe.jpg);
+    background-image:url(/yogasenter/images/Jarleyoga-removebg-preview.png);
     min-height: 600px;
     background-size: cover;
     background-position: center;
@@ -66,6 +66,7 @@
     flex-direction: column;
     justify-content: center;
     padding: 20%;
+    background-color: #E4E5F0;
 }
 
 

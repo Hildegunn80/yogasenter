@@ -2,7 +2,7 @@
     https://earnest-blancmange-9e62aa.netlify.app/index.html
 */
 :root {
-    --color-coffe: #DF9059;
+    --color-coffe:#ffffff;
     --color-bg: rgb(244, 246, 244);
     --color-bg-light: #D6F1F3;
     --color-hoover: green;
@@ -11,6 +11,9 @@
     --color-links:#112A46;
 }
 
+.logo{
+    max-width: 120px;
+}
 .logo a {
     font-size: 16px;
 }
@@ -82,7 +85,7 @@ footer {
     flex-direction: column;    
     grid-area: footer;
     justify-content: center;
-    background-color: black;
+    background-color: #2F1725;
     color: white;
 }
 
