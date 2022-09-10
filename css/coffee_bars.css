@@ -13,6 +13,7 @@
     'footer';
     background-color: var(--color-bg);
     text-align: center;
+    background-color: whitesmoke;
 }
 
 .Title {
@@ -40,7 +41,9 @@
     margin: 0 auto;
     padding:10px 30px 10px 30px;
     text-align: left;
-    background-color: lightblue;
+    background-color: rgb(225, 222, 222);
+    border: 2px solid rgb(208, 202, 202);
+    
 }
 
 
@@ -52,18 +55,16 @@
     background-size: cover;
     background-position: center;
     min-height: 500px;
-    justify-content: center;
 }
 
 .boks-b h1 {
-    display: block;
     letter-spacing: 0.1em; 
-    font-size:2.5rem;
-    background-color: plum;
+    font-size:3rem;
     padding:20px;
     position: relative;
-    justify-self: left;
     margin-top: 0%;
+    color: whitesmoke;
+    justify-content: center;
     
 }
 

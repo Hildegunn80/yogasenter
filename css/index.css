@@ -25,19 +25,21 @@
 }
 
 .boks-b a {
-    font-size:40px;
+    font-size:50px;
     color:var(--color-links);
     border: var(--color-ascent) 5px solid;
     max-width: 300px;
     background-color: var(--color-ascent);
     letter-spacing: 0.2em;
     border-radius: 8px;
-    align-self: center;
-    justify-content: left;
+    justify-content: center;
+    position: absolute;
+    left: 40%;
+    top: 50%;
  }
 
 .boks-b a:hover {
-    font-size:40px;
+    font-size:50px;
     color:var(--color-links);
     max-width: 300px;
     color:rgba(0, 0, 0, 0.792);

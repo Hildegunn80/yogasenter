@@ -18,7 +18,7 @@
 .boks-b {
     grid-area: boks-b;
     display: flex;
-    background:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.3)), url(../images/cup\ fill.jpg);
+    background:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url(/yogasenter/images/yoga-g2e229a88b_1280.jpg);
     background-size: cover;
     background-position: center;
     min-height: 500px;
@@ -33,7 +33,14 @@
      top: 10%;
  }
 
- .boks-c a,
+ .boks-c{
+    background:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.3)), url(/yogasenter/images/67782902_2421438718092035_536827141988286464_n.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 600px;
+
+ }
+
  .boks-e a,
  .boks-f a,
  .boks-g a,
@@ -46,7 +53,6 @@
     font-size: 20px;
  }
 
- .boks-c a:hover,
  .boks-e a:hover,
  .boks-f a:hover,
  .boks-g a:hover,
@@ -56,7 +62,6 @@
  }
 
 
- .boks-c i,
  .boks-e i,
  .boks-f i,
  .boks-g i,
@@ -66,7 +71,6 @@
  }
 
 
-.boks-c,
 .boks-d,
 .boks-e,
 .boks-f,
@@ -84,7 +88,6 @@
     justify-content: center;
 }
 
-.boks-c,
 .boks-f,
 .boks-g,
 .boks-j {
