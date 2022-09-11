@@ -43,6 +43,7 @@
     text-align: left;
     background-color: rgb(225, 222, 222);
     border: 2px solid rgb(208, 202, 202);
+    line-height: 0,2em;
     
 }
 
@@ -59,13 +60,14 @@
 
 .boks-b h1 {
     letter-spacing: 0.1em; 
-    font-size:3rem;
+    font-size:4.5rem;
     padding:20px;
-    position: relative;
+    position: absolute;
     margin-top: 0%;
     color: whitesmoke;
     justify-content: center;
-    
+    left: 15%;
+    top: 30%;
 }
 
 .boks-c,
@@ -76,6 +78,7 @@
     flex-direction: column;
     position: relative;
     justify-content: center;
+    border-radius: 20px;
 }
 
 .boks-c { grid-area: boks-c; }

@@ -15,7 +15,7 @@
 .boks-b {
     grid-area: boks-b;
     display: flex;
-    background:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4)), url(../images/beans\ zoom.jpg);
+    background:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4)), url(/yogasenter/images/Jarleyoga.jpg);
     background-size: cover;
     background-position: center;
     min-height: 500px;
@@ -44,6 +44,8 @@
     grid-area: boks-c;
     background-color: black;
     color: var(--color-ascent);
+    text-align: left;
+    padding-left: 10px;
 }
 
 .boks-d {
