@@ -85,7 +85,7 @@ footer {
     flex-direction: column;    
     grid-area: footer;
     justify-content: center;
-    background-color: #2F1725;
+    background-color: whitesmoke;
     color: white;
 }
 

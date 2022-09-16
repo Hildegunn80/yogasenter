@@ -6,7 +6,9 @@
     grid-template-areas: 
     'header header'
     'boks-b boks-b'
+    'banner banner'
     'boks-c boks-d'
+    'boks-e boks-f'
     'boks-e boks-f'
     'boks-g boks-h'
     'footer footer';
@@ -18,7 +20,7 @@
     grid-area: boks-b;
     display: flex;
     flex-direction: column;
-    background-image:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0,0,0,0.6)),url(/images/rock-gb52cd717a_1280.jpg);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0,0,0,0.5)),url(/images/-®\ Fotograf\ Siv\ Sivertsen\ 111_redusert_speil_uten\ tekst\ kopi.jpg);
     background-size: cover;
     background-position: center;
     min-height: 500px;  
@@ -27,11 +29,11 @@
 .boks-b a {
     font-size:50px;
     color:var(--color-links);
-    border: var(--color-ascent) 5px solid;
+    border: var(--color-ascent) 3px solid;
     max-width: 300px;
-    background-color: var(--color-ascent);
-    letter-spacing: 0.2em;
-    border-radius: 8px;
+    background-color: #BF5630;
+    letter-spacing: 0.1em;
+    border-radius: 6px;
     justify-content: center;
     position: absolute;
     left: 40%;
@@ -47,23 +49,34 @@
 }
 
 .boks-b h1 {
-    letter-spacing: 0.1em; 
+    letter-spacing: 0.3em; 
     font-size:2.5rem;
-    background-color: plum;
+    background-color:#2B2B40;
     padding:20px;
     position: relative;
     justify-self: left;
     margin-top: 0%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: whitesmoke;
 }
 
+.banner{
+    grid-area: banner;
+    letter-spacing: 0.08em;
+    background-color:  whitesmoke;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.banner h2{
+    font-size: 40px;
+}
 .boks-e {
     grid-area: boks-e;
     position: relative;
-    background-image:url(/yogasenter/images/62518207_2376016275967613_8768237496413716480_n.jpg);
+    background-image:url(/images/-®\ Fotograf\ Siv\ Sivertsen\ 96.jpg);
     min-height: 600px;
     background-size: cover;
     background-position: center;
-    border-radius: 10px;
     border: rgba(0, 0, 0, 0.389) 3px solid;
 }
 
@@ -73,10 +86,15 @@
     flex-direction: column;
     justify-content: center;
     padding: 3px;
-    background-color: #E4E5F0;
-    border-radius: 10px;
-    border: rgba(0, 0, 0, 0.389) 3px solid;
+    background-color: whitesmoke;
+    border:rgba(0, 0, 0, 0.389) 3px solid;
     text-align: left;
+    padding-left: 20%;
+    padding-right: 20%;
+    letter-spacing: 2px;
+    line-height: 25px;
+    border: 2px solid rgb(200, 193, 193);
+    background-color: rgb(226, 231, 232);
 }
 
 

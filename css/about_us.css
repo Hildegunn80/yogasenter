@@ -15,7 +15,7 @@
 .boks-b {
     grid-area: boks-b;
     display: flex;
-    background:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4)), url(/yogasenter/images/Jarleyoga.jpg);
+    background:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4)), url(/images/Jarleyoga.jpg);
     background-size: cover;
     background-position: center;
     min-height: 500px;
@@ -38,19 +38,32 @@
     background-repeat: no-repeat;
     background-position: top;
     justify-content: center;
+    text-align: left;
+    
 }
 
 .boks-c {
     grid-area: boks-c;
-    background-color: black;
-    color: var(--color-ascent);
+    background-color: rgb(191, 227, 234);
+    color: black;
     text-align: left;
-    padding-left: 10px;
+    padding-left: 30px;
+    letter-spacing: 2px;
+    border: 2px solid rgb(200, 193, 193);
+    
+}
+
+.boks-c h2{
+    font-size: 25px;
 }
 
 .boks-d {
     grid-area: boks-d;
     padding-left: 20%;
     padding-right: 20%;
+    letter-spacing: 2px;
+    line-height: 25px;
+    border: 2px solid rgb(200, 193, 193);
+    background-color: rgb(226, 231, 232);
 }
 
