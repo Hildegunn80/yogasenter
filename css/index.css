@@ -104,7 +104,8 @@
 
 
 
-.boks-f {
+.boks-f, 
+.boks-g{
     grid-area: boks-f;
     display: flex;
     flex-direction: column;
