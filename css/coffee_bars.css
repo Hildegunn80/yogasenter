@@ -52,10 +52,10 @@
     grid-area: boks-b;
     display: flex;
     background: url(/images/3cups.jpg); /* fallback */
-    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url(/images/-®\ Fotograf\ Siv\ Sivertsen\ 103.jpg);
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.4)), url(/images/-®\ Fotograf\ Siv\ Sivertsen\ 85.jpg);
     background-size: cover;
     background-position: center;
-    min-height: 500px;
+    min-height: 800px;
 }
 
 .boks-b h1 {

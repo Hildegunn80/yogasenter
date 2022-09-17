@@ -11,6 +11,7 @@
     'boks-e boks-f'
     'boks-g boks-h'
     'banner-2 banner-2'
+    'boks-i boks-j'
     'footer footer';
     background-color: var(--color-bg);
     text-align: center;
@@ -91,6 +92,17 @@
     background-position: center;
     border: rgba(0, 0, 0, 0.389) 3px solid;
 }
+.boks-h {
+    grid-area: boks-e;
+    position: relative;
+    background-image:url(/images/-®\ Fotograf\ Siv\ Sivertsen\ 102.jpg);
+    min-height: 600px;
+    background-size: cover;
+    background-position: center;
+    border: rgba(0, 0, 0, 0.389) 3px solid;
+}
+
+
 
 .boks-f {
     grid-area: boks-f;
@@ -132,5 +144,13 @@
     
 }
 
+
+.boks-i{
+    grid-area: boks-i;
+}
+
+.boks-j{
+    grid-area-boks-j;
+}
 
 
