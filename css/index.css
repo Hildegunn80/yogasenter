@@ -8,7 +8,7 @@
     'boks-b boks-b'
     'banner banner'
     'boks-c boks-d'
-    'boks-e boks-f'
+    'boks-e-changingimage boks-f'
     'boks-g boks-h'
     'banner-2 banner-2'
     'boks-j boks-i'
@@ -83,17 +83,17 @@
     background-color: #BF5630 ;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-.boks-e {
-    grid-area: boks-e;
+.boks-e-changingimage {
+    grid-area:boks-e-changingimage;
     position: relative;
-    background-image:url(/images/-®\ Fotograf\ Siv\ Sivertsen\ 96.jpg);
+    background-image:url(/images/-®\ Fotograf\ Siv\ Sivertsen\ 85.jpg);
     min-height: 600px;
     background-size: cover;
     background-position: center;
     border: rgba(0, 0, 0, 0.389) 3px solid;
 }
 .boks-h {
-    grid-area: boks-e;
+    grid-area: boks-h;
     position: relative;
     background-image:url(/images/-®\ Fotograf\ Siv\ Sivertsen\ 102.jpg);
     min-height: 600px;
