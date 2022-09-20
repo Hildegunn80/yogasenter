@@ -69,15 +69,15 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .banner h2,
-.banner-2 h2{
+.banner-2 h2 {
     font-size: 40px;
     color:black;
 }
 
-.banner-2 h2{
+.banner-2 h2 {
     color: white;
 }
-.banner-2{
+.banner-2 {
     grid-area: banner-2;
     letter-spacing: 0.08em;
     background-color: #BF5630 ;
@@ -86,11 +86,12 @@
 .boks-e-changingimage {
     grid-area:boks-e-changingimage;
     position: relative;
-    background-image:url(/images/-®\ Fotograf\ Siv\ Sivertsen\ 85.jpg);
+    /*background-image:url(/images/-®\ Fotograf\ Siv\ Sivertsen\ 85.jpg);*/
     min-height: 600px;
     background-size: cover;
     background-position: center;
-    border: rgba(0, 0, 0, 0.389) 3px solid;
+    border: 2px solid var(--color-border);
+    transition: background 2.0s ease-in-out;
 }
 .boks-h {
     grid-area: boks-h;
@@ -105,20 +106,19 @@
 
 
 .boks-f, 
-.boks-g{
+.boks-g {
     grid-area: boks-f;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 3px;
     background-color: whitesmoke;
-    border:rgba(0, 0, 0, 0.389) 3px solid;
     text-align: left;
     padding-left: 20%;
     padding-right: 20%;
     letter-spacing: 2px;
     line-height: 25px;
-    border: 2px solid rgb(200, 193, 193);
+    border: 2px solid var(--color-border);
     background-color: rgb(226, 231, 232);
 }
 
