@@ -101,9 +101,8 @@
     background-size: cover;
     background-position: center;
     border: 2px solid var(--color-border);
+    transition: background 2.0s ease-in-out;
 }
-
-
 
 .boks-f, 
 .boks-g,
@@ -131,6 +130,7 @@
     background-size: cover;
     background-position: center;
     border: 2px solid var(--color-border);
+    transition: background 2.0s ease-in-out;
 }
 
 .boks-g {

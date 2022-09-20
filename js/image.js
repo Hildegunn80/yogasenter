@@ -1,18 +1,27 @@
 
-function changeBg() {    
+function changeBg() {
+    changeBoxBG(".boks-e-changingimage");
+    changeBoxBG(".boks-h");
+    changeBoxBG(".boks-j");
+}
+
+function changeBoxBG(box) {
     const images = [
+        'url("/images/-® Fotograf Siv Sivertsen 103.jpg")',
+        'url("/images/-® Fotograf Siv Sivertsen 102.jpg")',
+        'url("/images/-® Fotograf Siv Sivertsen 96.jpg")',
         'url("/images/-® Fotograf Siv Sivertsen 88.jpg")',
         'url("/images/-® Fotograf Siv Sivertsen 85.jpg")'
     ];
 
-    const boksE = document.querySelector(".boks-e-changingimage");    
+    const boks = document.querySelector(box);    
     const picture = images[Math.floor(Math.random() * images.length)];
 
-    if(boksE.style.backgroundImage != picture) {
-        boksE.style.backgroundImage = picture;
+    if(boks.style.backgroundImage != picture) {
+        boks.style.backgroundImage = picture;
     }
 
 }
 
-setInterval(changeBg(),3000);
+setInterval(changeBg,4000);
 window.onload = changeBg(); // initial image.
