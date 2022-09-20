@@ -106,7 +106,8 @@
 
 
 .boks-f, 
-.boks-g {
+.boks-g,
+.boks-i {
     grid-area: boks-f;
     display: flex;
     flex-direction: column;
@@ -121,7 +122,6 @@
     border: 2px solid var(--color-border);
     background-color: rgb(226, 231, 232);
 }
-
 
 .boks-j {
     grid-area: boks-e;
