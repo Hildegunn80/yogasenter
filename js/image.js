@@ -14,5 +14,5 @@ function changeBg() {
 
 }
 
-setInterval(changeBg,3000);
+setInterval(changeBg(),3000);
 window.onload = changeBg(); // initial image.

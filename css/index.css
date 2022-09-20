@@ -100,7 +100,7 @@
     min-height: 600px;
     background-size: cover;
     background-position: center;
-    border: rgba(0, 0, 0, 0.389) 3px solid;
+    border: 2px solid var(--color-border);
 }
 
 
@@ -130,13 +130,13 @@
     min-height: 600px;
     background-size: cover;
     background-position: center;
-    border: rgba(0, 0, 0, 0.389) 3px solid;
+    border: 2px solid var(--color-border);
 }
 
-.boks-g{
+.boks-g {
     grid-area: boks-g;
 }
-.boks-h{
+.boks-h {
     grid-area: boks-h;
 }
 
@@ -155,11 +155,11 @@
     
 }
 
-.boks-i{
+.boks-i {
     grid-area: boks-i;
 }
 
-.boks-j{
+.boks-j {
     grid-area:boks-j;
 }
 
