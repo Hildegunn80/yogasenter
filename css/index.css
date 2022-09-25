@@ -32,7 +32,7 @@
     color:var(--color-links);
     border: var(--color-ascent) 3px solid;
     max-width: 300px;
-    background-color: #BF5630;
+    background-color: var(--color-button);
     letter-spacing: 0.1em;
     border-radius: 6px;
     justify-content: center;
@@ -74,13 +74,10 @@
     color:black;
 }
 
-.banner-2 h2 {
-    color: white;
-}
 .banner-2 {
     grid-area: banner-2;
     letter-spacing: 0.08em;
-    background-color: #BF5630 ;
+    background-color:  whitesmoke;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .boks-e-changingimage {
@@ -121,6 +118,29 @@
     border: 2px solid var(--color-border);
     background-color: rgb(226, 231, 232);
 }
+
+.boks-f h2, 
+.boks-g h2,
+.boks-i h2{
+line-height: 25 px;
+font-size: 25px;
+}
+.boks-f a,
+.boks-g a{
+    background-color: var(--color-button);
+    border: var(--color-ascent) solid 2px ;
+    max-width: 100px;
+    border-radius: 6px;
+    letter-spacing: 1em;
+    text-align: center;
+    letter-spacing: 0.1em;
+    font-size: 20px;
+    margin-top: 20px;
+    color: var(--color-links);
+    font-weight: bold;
+}
+
+
 
 .boks-j {
     grid-area: boks-e;

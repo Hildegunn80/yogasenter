@@ -2,12 +2,12 @@
     min-height: 100%;
     display: grid;
     grid-gap: 2px;
-    grid-template-columns: 50% 49%;
+    grid-template-columns: 49% 25% 25%;
     grid-template-areas: 
-    'header header'
-    'boks-b boks-b'
-    'boks-c boks-d'
-    'footer footer';
+    'header header header'
+    'boks-b boks-b boks-b'
+    'boks-d boks-d boks-c'
+    'footer footer footer';
     background-color: var(--color-bg);
     text-align: center;
 }
@@ -43,24 +43,26 @@
 }
 
 .boks-c {
+    padding-top: 20px;
     grid-area: boks-c;
-    background-color: #D9763D;
-    color:white;
+    background-color: lightblue;
+    color:var(--color-links);
     text-align: left;
-    padding-left: 30px;
+    padding-left: 10px;
     letter-spacing: 2px;
     border: 2px solid rgb(200, 193, 193);
     font-weight: bold;
-    font-size: 20px;
+    font-size: 10px;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: left;
 }
 
 .boks-c h2{
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .boks-d {
-    padding-top: 5px;
+    padding-top: 20px;
     grid-area: boks-d;
     padding-left: 20%;
     padding-right: 20%;
