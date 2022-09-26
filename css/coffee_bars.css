@@ -2,15 +2,14 @@
     min-height: 100%;
     display: grid;
     grid-gap: 2px;
-    grid-template-columns: 99%;
+    grid-template-columns: 50% 49%;
     grid-template-areas: 
-    'header'
-    'boks-b'
-    'boks-c'
-    'boks-d'
-    'boks-e'
-    'boks-f'
-    'footer';
+    'header header'
+    'boks-b boks-b'
+    'boks-c boks-d'
+    'boks-e boks-f'
+    'boks-g boks-h'
+    'footer footer';
     background-color: var(--color-bg);
     text-align: center;
     background-color: whitesmoke;
@@ -36,16 +35,7 @@
     color: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3));
 }
 
-.description {
-    max-width: 600px;
-    margin: 0 auto;
-    padding:10px 30px 10px 30px;
-    text-align: left;
-    background-color: rgb(225, 222, 222);
-    border: 2px solid rgb(208, 202, 202);
-    line-height: 0,2em;
-    
-}
+
 
 
 .boks-b {
@@ -69,20 +59,78 @@
     left: 15%;
     top: 30%;
 }
+.boks-b h2{
+    background-color:rgb(173, 216, 230,0.4);
+    max-height: 130px;
+    text-align: left;
+    width: 100%;
+    position: relative;
+    top: 77%;
+    font-size: 40px;
+    font-weight: bold;
+    padding-top: 20px;
+    
+}
+
+.boks-c h2,
+.boks-d h2,
+.boks-e h2,
+.boks-f h2,
+.boks-g h2,
+.boks-h h2{
+    font-size: 25px;
+    font-weight: bold;
+    max-width: 100%;
+}
+
+
+
 
 .boks-c,
 .boks-d,
 .boks-e,
-.boks-f {
+.boks-f,
+.boks-g,
+.boks-h {
     display: flex;
     flex-direction: column;
-    position: relative;
-    justify-content: center;
-    border-radius: 20px;
+    padding: 3px;
+    background-color: whitesmoke;
+    text-align: left;
+    padding-left: 20%;
+    padding-right: 20%;
+    letter-spacing: 2px;
+    border: 2px solid var(--color-border);
+    background-color: rgb(226, 231, 232);
 }
+
+
+.boks-c .logo,
+.boks-d.logo,
+.boks-e .logo,
+.boks-f .logo,
+.boks-g .logo,
+.boks-h .logo{
+    max-width: 50px;
+    opacity: 0.9;
+    position: relative;
+    align-self: center;
+}
+
+.boks-c p,
+.boks-d p,
+.boks-e p,
+.boks-f p,
+.boks-g p,
+.boks-h p{
+    line-height: 25px;
+}
+
+
 
 .boks-c { grid-area: boks-c; }
 .boks-d { grid-area: boks-d; }
 .boks-e { grid-area: boks-e; }
 .boks-f { grid-area: boks-f; }
-
+.boks-g { grid-area: boks-g; }
+.boks-h { grid-area: boks-h; }

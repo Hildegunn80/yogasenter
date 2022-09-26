@@ -15,7 +15,7 @@
 
 .boks-b {
     grid-area: boks-b;
-    background-image: url(../images/cup\ fill.jpg);
+    background-image: url(/images/Jarleyoga.jpg);
     background-size: cover;
     background-position: center;
     min-height: 300px;
@@ -58,7 +58,7 @@
 }
 
 .boks-c{
-    background: linear-gradient(to right, red, orange, yellow,green,indigo,violet);
+    background: whitesmoke;
 }
 
 .boks-d {
