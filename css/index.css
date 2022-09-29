@@ -33,7 +33,7 @@
 }
 
 .single-img{
-    background-image:linear-gradient(rgba(0, 0, 0, 0.9), rgba(0,0,0,0.5)),url(/images/-®\ Fotograf\ Siv\ Sivertsen\ 111_redusert_speil_uten\ tekst\ kopi.jpg);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.9), rgba(0,0,0,0.9)),url(/images/-®\ Fotograf\ Siv\ Sivertsen\ 111_redusert_speil_uten\ tekst\ kopi.jpg);
     background-repeat: no-repeat;
     background-position: 50%;
     -webkit-background-size:cover;
@@ -57,7 +57,7 @@
     15%{
         transform: scale(1);
         filter:blur(0);
-        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0,0,0,0.9)),url(/images/-®\ Fotograf\ Siv\ Sivertsen\ 111_redusert_speil_uten\ tekst\ kopi.jpg);;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0,0,0,0.6)),url(/images/-®\ Fotograf\ Siv\ Sivertsen\ 111_redusert_speil_uten\ tekst\ kopi.jpg);;
     }
 }
 
