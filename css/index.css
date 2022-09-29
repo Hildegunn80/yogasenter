@@ -19,13 +19,50 @@
 
 .boks-b {
     grid-area: boks-b;
-    display: flex;
-    flex-direction: column;
-    background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0,0,0,0.5)),url(/images/-®\ Fotograf\ Siv\ Sivertsen\ 111_redusert_speil_uten\ tekst\ kopi.jpg);
-    background-size: cover;
-    background-position: center;
     min-height: 500px;  
+    display: table;
+    position: relative;
+    width: 100%;
 }
+.img-area{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+    z-index: 4;
+}
+
+.single-img{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.9), rgba(0,0,0,0.5)),url(/images/-®\ Fotograf\ Siv\ Sivertsen\ 111_redusert_speil_uten\ tekst\ kopi.jpg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    -webkit-background-size:cover;
+    background-size: cover;
+    animation:animate ease-in-out 40s 0s infinite;
+    transform: translate3d(0,0,0);
+    -webkit-backface-visibility:hidden;
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    top:0;
+    left: 0;
+    right:0;
+    z-index: 0;
+}
+@keyframes animate{
+    10%{
+        transform: scale(2);
+        filter:blur(2px);
+    }
+    15%{
+        transform: scale(1);
+        filter:blur(0);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0,0,0,0.9)),url(/images/-®\ Fotograf\ Siv\ Sivertsen\ 111_redusert_speil_uten\ tekst\ kopi.jpg);;
+    }
+}
+
+
+
 .boks-b h2{
     background-color: rgb(43, 43, 64,0.4);
     text-align: center;
@@ -44,25 +81,13 @@
 
 .boks-b a {
     font-size:50px;
-    color:var(--color-links);
-    border: var(--color-ascent) 3px solid;
-    max-width: 300px;
-    background-color: var(--color-button);
-    letter-spacing: 0.1em;
-    border-radius: 6px;
     justify-content: center;
     position: absolute;
-    left: 40%;
-    top: 500px;
+    left: 30%;
+    top: 130px;
  }
 
-.boks-b a:hover {
-    font-size:50px;
-    color:var(--color-links);
-    max-width: 300px;
-    color:rgba(0, 0, 0, 0.792);
-    background-color: rgba(255, 255, 255, 0.767);
-}
+
 
 .boks-b h1 {
     letter-spacing: 0.3em; 
