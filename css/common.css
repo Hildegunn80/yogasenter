@@ -14,7 +14,7 @@
 }
 
 .logo{
-    max-width: 200px;
+    max-width: 100px;
 }
 .logo a {
     font-size: 16px;
@@ -75,7 +75,7 @@ img {
     background-color: var(--color-bg);
     align-items: center;
     min-height: 100px;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .header i {

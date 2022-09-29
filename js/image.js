@@ -8,7 +8,6 @@ function changeBg() {
 function changeBoxBG(box) {
     const images = [
         'url("/images/-® Fotograf Siv Sivertsen 103.jpg")',
-        'url("/images/SmallLogo.png")',
         'url("/images/-® Fotograf Siv Sivertsen 96.jpg")',
         'url("/images/-® Fotograf Siv Sivertsen 88.jpg")',
         'url("/images/-® Fotograf Siv Sivertsen 85.jpg")'
