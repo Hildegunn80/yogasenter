@@ -10,11 +10,11 @@
     --color-ascent:#ffffff;
     --color-links:#112A46;
     --color-border : rgb(200, 193, 193);
-    --color-button:#BF5630;
+    --color-button:rgb(245, 245, 245,0.9);
 }
 
 .logo{
-    max-width: 120px;
+    max-width: 200px;
 }
 .logo a {
     font-size: 16px;
@@ -75,6 +75,7 @@ img {
     background-color: var(--color-bg);
     align-items: center;
     min-height: 100px;
+    flex-direction: column;
 }
 
 .header i {
@@ -114,8 +115,8 @@ footer i {
     display: flex;
     background-color: azure;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    padding: 10px;
-    justify-content: space-between;
+    padding: 50px;
+    justify-content: space-around;
 }
 
 nav {
