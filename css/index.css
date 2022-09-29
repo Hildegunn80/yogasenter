@@ -57,7 +57,7 @@
     15%{
         transform: scale(1);
         filter:blur(0);
-        background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0,0,0,0.6)),url(/images/-®\ Fotograf\ Siv\ Sivertsen\ 111_redusert_speil_uten\ tekst\ kopi.jpg);;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0,0,0,0.9)),url(/images/-®\ Fotograf\ Siv\ Sivertsen\ 111_redusert_speil_uten\ tekst\ kopi.jpg);;
     }
 }
 
