@@ -82,6 +82,33 @@
     font-weight: bold;
     max-width: 100%;
 }
+.boks-d h2{
+    text-align: center;
+    /*background-color: rgb(245, 245, 245,0.1);*/
+    color: whitesmoke;
+    position: absolute;
+    max-width: 400px;
+    text-align: center;
+    margin-left: 10px;  
+    padding-top: 10px;
+    margin-top: 10;
+    left: 20%;
+    top:10%;
+}
+
+.boks-h h2{
+    text-align: center;
+    /*background-color: rgb(245, 245, 245,0.1);*/
+    color: whitesmoke;
+    position: absolute;
+    max-width: 400px;
+    text-align: center;
+    margin-left: 10px;  
+    margin-top: 10;
+    bottom: 5%;
+    left: 30%;
+}
+
 
 
 
@@ -102,6 +129,7 @@
     letter-spacing: 2px;
     border: 2px solid var(--color-border);
     background-color: rgb(226, 231, 232);
+    position: relative;
 }
 
 
@@ -126,6 +154,40 @@
     line-height: 25px;
 }
 
+.boks-d{
+    color: white;
+    position: relative;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0,0,0,0.6)),url(/images/-®\ Fotograf\ Siv\ Sivertsen\ 88.jpg);
+    min-height: 600px;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid var(--color-border);
+    padding-left: 0px;
+    padding-top: 0;
+}
+
+.boks-e{
+    color: white;
+    position: relative;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0,0,0,0.6)),url(/images/-®\ Fotograf\ Siv\ Sivertsen\ 96.jpg);
+    min-height: 600px;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid var(--color-border);
+    padding-left: 0px;
+    padding-top: 0;
+}
+.boks-h{
+    color: white;
+    position: relative;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0,0,0,0.6)),url(/images/-®\ Fotograf\ Siv\ Sivertsen\ 85.jpg);
+    min-height: 600px;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid var(--color-border);
+    padding-left: 0px;
+    padding-top: 0;
+}
 
 
 .boks-c { grid-area: boks-c; }
