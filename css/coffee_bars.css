@@ -42,7 +42,7 @@
     grid-area: boks-b;
     display: flex;
     background: url(../images/3cups.jpg); /* fallback */
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.4)), url(/images/Fotograf\ Siv\ Sivertsen\ 85.jpg);
+    background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(/images/Fotograf\ Siv\ Sivertsen\ 85.jpg);
     background-size: cover;
     background-position: center;
     min-height: 800px;
@@ -157,7 +157,7 @@
 .boks-d{
     color: white;
     position: relative;
-    background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0,0,0,0.6)),url(/images/Fotograf\ Siv\ Sivertsen\ 88.jpg);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.1), rgba(0,0,0,0.1)),url(/images/Fotograf\ Siv\ Sivertsen\ 88.jpg);
     min-height: 600px;
     background-size: cover;
     background-position: center;
@@ -169,7 +169,7 @@
 .boks-e{
     color: white;
     position: relative;
-    background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0,0,0,0.6)),url(/images/Fotograf\ Siv\ Sivertsen\ 96.jpg);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.1), rgba(0,0,0,0.1)),url(/images/Fotograf\ Siv\ Sivertsen\ 96.jpg);
     min-height: 600px;
     background-size: cover;
     background-position: center;
@@ -180,7 +180,7 @@
 .boks-h{
     color: white;
     position: relative;
-    background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0,0,0,0.6)),url(/images/Fotograf\ Siv\ Sivertsen\ 85.jpg);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.1), rgba(0,0,0,0.1)),url(/images/Fotograf\ Siv\ Sivertsen\ 85.jpg);
     min-height: 600px;
     background-size: cover;
     background-position: center;
