@@ -19,12 +19,13 @@
 
 .boks-b {
     grid-area: boks-b;
-    min-height: 500px;  
+    min-height: 500px;
     display: table;
     position: relative;
     width: 100%;
 }
-.img-area{
+
+.img-area {
     display: table-cell;
     vertical-align: middle;
     text-align: center;
@@ -32,38 +33,36 @@
     z-index: 4;
 }
 
-.single-img{
-    background-image:linear-gradient(rgba(0, 0, 0, 0.9), rgba(0,0,0,0.9)),url(/images/-®\ Fotograf\ Siv\ Sivertsen\ 111_redusert_speil_uten\ tekst\ kopi.jpg);
+.single-img {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0,0,0,0)),url(../images/SmallLogo.png);
     background-repeat: no-repeat;
     background-position: 50%;
-    -webkit-background-size:cover;
-    background-size: cover;
-    animation:animate ease-in-out 40s 0s infinite;
+    background-size: 35%;
+    animation: animate ease-in-out 20s 0s;
     transform: translate3d(0,0,0);
-    -webkit-backface-visibility:hidden;
+    filter: blur(2px);
+    filter: hue-rotate(0deg);
+
+/*    -webkit-backface-visibility: hidden;*/
     width: 100%;
     position: absolute;
     height: 100%;
-    top:0;
-    left: 0;
-    right:0;
-    z-index: 0;
+    top: 0;    
+    /*border: 1px solid #F00;*/
 }
-@keyframes animate{
-    10%{
-        transform: scale(2);
-        filter:blur(2px);
+
+@keyframes animate {
+    10% {
+        transform: scale(1.1);
+        /*filter:blur(2px);*/
     }
-    15%{
+    15% {
         transform: scale(1);
-        filter:blur(0);
-        background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0,0,0,0.9)),url(/images/-®\ Fotograf\ Siv\ Sivertsen\ 111_redusert_speil_uten\ tekst\ kopi.jpg);;
+        /*filter:blur(0);*/
     }
 }
 
-
-
-.boks-b h2{
+.boks-b h2 {
     background-color: rgb(43, 43, 64,0.4);
     text-align: center;
     width: 100%;
@@ -74,9 +73,7 @@
     padding-top: 20px;
     color: white;
     min-height: 50px;
-    padding-bottom: 10px;
-
-    
+    padding-bottom: 10px;    
 }
 
 .boks-b a {
@@ -86,8 +83,6 @@
     left: 30%;
     top: 130px;
  }
-
-
 
 .boks-b h1 {
     letter-spacing: 0.3em; 
@@ -102,7 +97,7 @@
     color: whitesmoke;
 }
 
-.banner{
+.banner {
     grid-area: banner;
     letter-spacing: 0.08em;
     background-color:  whitesmoke;
@@ -133,7 +128,7 @@
 .boks-h {
     grid-area: boks-h;
     position: relative;
-    background-image:url(/images/-®\ Fotograf\ Siv\ Sivertsen\ 102.jpg);
+    background-image:url(../images/Fotograf\ Siv\ Sivertsen\ 102.jpg);
     min-height: 600px;
     background-size: cover;
     background-position: center;
@@ -185,7 +180,7 @@ font-size: 25px;
 .boks-j {
     grid-area: boks-e;
     position: relative;
-    background-image:url(/images/-®\ Fotograf\ Siv\ Sivertsen\ 88.jpg);
+    background-image:url(../images/Fotograf\ Siv\ Sivertsen\ 88.jpg);
     min-height: 600px;
     background-size: cover;
     background-position: center;
