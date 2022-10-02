@@ -31,9 +31,10 @@
     text-align: center;
     position: relative;
     z-index: 4;
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0,0,0,0)),url(../images/Fotograf\ Siv\ Sivertsen\ 102.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0,0,0,.8)),url(../images/Fotograf\ Siv\ Sivertsen\ 111.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
-
 
 .single-img {
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0,0,0,0)),url(../images/SmallLogo.png);
@@ -42,14 +43,13 @@
     background-size: 35%;
     animation: animate ease-in-out 20s 0s;
     transform: translate3d(0,0,0);
-    filter: blur(2px);
-    filter: hue-rotate(0deg);
-
+    /*filter: blur(2px);*/
+/*    filter: hue-rotate(0deg);*/
 /*    -webkit-backface-visibility: hidden;*/
     width: 100%;
     position: absolute;
     height: 100%;
-    top: 0;    
+    top: 0;
     /*border: 1px solid #F00;*/
 }
 
