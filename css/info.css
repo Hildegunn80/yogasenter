@@ -40,7 +40,7 @@
     grid-area: boks-b;
     display: flex;
     background: url(/images/3cups.jpg); /* fallback */
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.4)), url(/images/-®\ Fotograf\ Siv\ Sivertsen\ 85.jpg);
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.4)), url(/images/Fotograf\ Siv\ Sivertsen\ 102.jpg);
     background-size: cover;
     background-position: center;
     min-height: 800px;
@@ -138,6 +138,11 @@
 .boks-g p,
 .boks-h p{
     line-height: 25px;
+}
+
+.boks-d li{
+    font-size: 20px;
+    line-height: 80px;
 }
 
 
