@@ -105,7 +105,7 @@
 .banner h2,
 .banner-2 h2 {
     font-size: 40px;
-    color:black;
+    color:#022601;
 }
 
 .banner-2 {
@@ -150,7 +150,6 @@
     letter-spacing: 2px;
     line-height: 25px;
     border: 2px solid var(--color-border);
-    background-color: rgb(226, 231, 232);
 }
 
 .boks-f h2, 

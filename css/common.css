@@ -4,13 +4,13 @@
 :root {
     --color-coffe:#ffffff;
     --color-bg: #f8fdff;
-    --color-bg-light: #D6F1F3;
+    --color-bg-light: black;
     --color-hoover: green;
     --color-menu: #28CEDE;
     --color-ascent:#ffffff;
     --color-links:#112A46;
     --color-border : rgb(200, 193, 193);
-    --color-button:rgb(191, 52, 52,0.5);
+    --color-button:#21A2BF;
 }
 
 .logo{
