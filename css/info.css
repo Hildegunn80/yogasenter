@@ -1,0 +1,154 @@
+.gridcontainer {
+    min-height: 100%;
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: 70% 29%;
+    grid-template-areas: 
+    'header header'
+    'boks-b boks-b'
+    'boks-c boks-d'
+    'footer footer';
+    background-color: var(--color-bg);
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+.Title {
+    background-color: var(--color-menu);
+
+}
+    .Title h2:hover {
+    color:var(--color-ascent);
+}
+
+.bilde a {
+    padding: 0px;
+}
+
+.bilde img {
+    width: 100%;
+}
+
+.bilde {
+    color: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3));
+}
+
+
+
+
+.boks-b {
+    grid-area: boks-b;
+    display: flex;
+    background: url(/images/3cups.jpg); /* fallback */
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.4)), url(/images/-®\ Fotograf\ Siv\ Sivertsen\ 85.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 800px;
+}
+
+.boks-b h1 {
+    letter-spacing: 0.1em; 
+    font-size:4.5rem;
+    padding:20px;
+    position: absolute;
+    margin-top: 0%;
+    color: whitesmoke;
+    justify-content: center;
+    left: 15%;
+    top: 30%;
+}
+.boks-b h2{
+    background-color:rgb(173, 216, 230,0.4);
+    max-height: 130px;
+    text-align: left;
+    width: 100%;
+    position: relative;
+    top: 77%;
+    font-size: 40px;
+    font-weight: bold;
+    padding-top: 20px;
+    
+}
+
+.boks-c h2,
+.boks-d h2,
+.boks-e h2,
+.boks-f h2,
+.boks-g h2,
+.boks-h h2{
+    font-size: 25px;
+    font-weight: bold;
+    max-width: 100%;
+}
+
+
+.boks-d{
+    padding-top: 20px;
+    grid-area: boks-c;
+    background-color: lightblue;
+    color: var(--color-links);
+    text-align: left;
+    padding-left: 10px;
+    letter-spacing: 2px;
+    border: 2px solid rgb(200, 193, 193);
+    font-weight: bold;
+    font-size: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: left;
+}
+
+
+
+
+
+.boks-c,
+.boks-e,
+.boks-f,
+.boks-g,
+.boks-h {
+    display: flex;
+    flex-direction: column;
+    padding: 3px;
+    background-color: whitesmoke;
+    text-align: left;
+    padding-left: 20%;
+    padding-right: 20%;
+    letter-spacing: 2px;
+    border: 2px solid var(--color-border);
+    background-color: rgb(226, 231, 232);
+    position: relative;
+}
+
+
+.boks-c .logo,
+.boks-e .logo,
+.boks-f .logo,
+.boks-g .logo,
+.boks-h .logo{
+    max-width: 50px;
+    opacity: 0.9;
+    position: relative;
+    align-self: center;
+}
+
+.boks-c p,
+
+.boks-e p,
+.boks-f p,
+.boks-g p,
+.boks-h p{
+    line-height: 25px;
+}
+
+
+
+
+
+
+
+.boks-c { grid-area: boks-c; }
+.boks-d { grid-area: boks-d; }
+.boks-e { grid-area: boks-e; }
+.boks-f { grid-area: boks-f; }
+.boks-g { grid-area: boks-g; }
+.boks-h { grid-area: boks-h; }
