@@ -1,6 +1,12 @@
 /*
     Add section in array to expand menu.
 */
+
+// Settings //
+let pageIcon = "images/SmallLogoBlack.png";
+let menuClass = ".header";
+let siteName = "Stord Yoga"
+
 const htmlPages = [
     {
         file: "index.html",
@@ -32,6 +38,9 @@ const htmlPages = [
     }
 ];
 
+/* CODE */
+let currentPage = ""
+
 function addLogo(menu) {
     // create logo DIV
     let logo = document.createElement("div");
@@ -41,7 +50,7 @@ function addLogo(menu) {
     a.setAttribute("href","index.html");
     
     let img = document.createElement("img");
-    img.setAttribute("src","images/SmallLogoBlack.png");
+    img.setAttribute("src",pageIcon);
     
     a.appendChild(img);
     logo.appendChild(a);
@@ -77,6 +86,7 @@ function addNav(menu) {
 
         if(page.file == fileName) {
             a.className = "current";
+            currentPage = page.name
         }
 
         ul.appendChild(li);
@@ -107,7 +117,7 @@ function addMenu(menu) {
 function loadMenu() {
     // Cladd Location to create Menu system in.
     // in html:  <div class="header"></div>
-    const menu = document.querySelector(".header");
+    const menu = document.querySelector(menuClass);
 
     if (menu == null) {
         console.log("Error Menu class not found in html document.");
@@ -118,6 +128,8 @@ function loadMenu() {
     addLogo(menu);
     addTitle(menu);
     addMenu(menu);
+
+    document.title = currentPage +" | " + siteName;
 }
 
 // load menu automatically..
