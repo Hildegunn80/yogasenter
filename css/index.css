@@ -31,10 +31,12 @@
     text-align: center;
     position: relative;
     z-index: 4;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0,0,0,0)),url(../images/Fotograf\ Siv\ Sivertsen\ 102.jpg);
 }
 
+
 .single-img {
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0,0,0,0)),url(../images/SmallLogoWhite.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0,0,0,0)),url(../images/SmallLogo.png);
     background-repeat: no-repeat;
     background-position: 50%;
     background-size: 35%;

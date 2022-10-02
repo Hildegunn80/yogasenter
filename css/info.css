@@ -7,6 +7,7 @@
     'header header'
     'boks-b boks-b'
     'boks-c boks-d'
+    'boks-c boks-e'
     'footer footer';
     background-color: var(--color-bg);
     text-align: center;
@@ -40,7 +41,7 @@
     grid-area: boks-b;
     display: flex;
     background: url(/images/3cups.jpg); /* fallback */
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.4)), url(/images/Fotograf\ Siv\ Sivertsen\ 102.jpg);
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.4)), url(../images/Jarle\ Langeland\ 300\ dpi@\ fotograf\ Siv\ Sivertsen-221.jpg);
     background-size: cover;
     background-position: center;
     min-height: 800px;
@@ -98,6 +99,14 @@
 }
 
 
+.boks-e{
+        position: relative;
+        background-image:url(../images/67782902_2421438718092035_536827141988286464_n.jpg);
+        min-height: 600px;
+        background-size: cover;
+        background-position: center;
+        border: 2px solid var(--color-border);
+    }
 
 
 
@@ -120,19 +129,9 @@
 }
 
 
-.boks-c .logo,
-.boks-e .logo,
-.boks-f .logo,
-.boks-g .logo,
-.boks-h .logo{
-    max-width: 50px;
-    opacity: 0.9;
-    position: relative;
-    align-self: center;
-}
+
 
 .boks-c p,
-
 .boks-e p,
 .boks-f p,
 .boks-g p,
