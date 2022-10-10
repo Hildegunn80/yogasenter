@@ -10,7 +10,7 @@
     --color-ascent:#ffffff;
     --color-links:whitesmoke;
     --color-border : rgb(200, 193, 193);
-    --color-button:#2060A1;
+    --color-button:rgb(55, 82, 110);
 }
 
 .logo{
@@ -88,7 +88,7 @@ footer {
     flex-direction: column;    
     grid-area: footer;
     justify-content: center;
-    background-color:#37526E;
+    background-color:rgb(55, 82, 110);
     color: white;
 }
 

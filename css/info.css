@@ -86,7 +86,7 @@
 .boks-d{
     padding-top: 20px;
     grid-area: boks-c;
-    background-color: lightblue;
+    background-color: rgb(55, 82, 110);
     color: var(--color-links);
     text-align: left;
     padding-left: 10px;
