@@ -4,13 +4,13 @@
 :root {
     --color-coffe:#ffffff;
     --color-bg: #f8fdff;
-    --color-bg-light: black;
+    --color-bg-light: white;
     --color-hoover: green;
     --color-menu: #28CEDE;
     --color-ascent:#ffffff;
-    --color-links:#112A46;
+    --color-links:whitesmoke;
     --color-border : rgb(200, 193, 193);
-    --color-button:#21A2BF;
+    --color-button:#2060A1;
 }
 
 .logo{
@@ -88,7 +88,7 @@ footer {
     flex-direction: column;    
     grid-area: footer;
     justify-content: center;
-    background-color:black;
+    background-color:#37526E;
     color: white;
 }
 
