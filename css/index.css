@@ -19,7 +19,7 @@
 
 .boks-b {
     grid-area: boks-b;
-    min-height: 500px;
+    min-height: 450px;
     display: table;
     position: relative;
     width: 100%;

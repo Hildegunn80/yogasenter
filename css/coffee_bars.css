@@ -9,6 +9,7 @@
     'boks-f boks-e'
     'boks-d boks-c'
     'boks-g boks-h'
+    'banner banner'
     'footer footer';
     background-color: var(--color-bg);
     text-align: center;
@@ -210,9 +211,29 @@
     display: flex;
 }
 
+.banner {
+    grid-area: banner;
+    letter-spacing: 0.08em;
+    background-color:  #BF3434;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    min-height: 250px;
+    color: white;
+}
+.banner a{
+    background-color: white;
+    width: 150px;
+    border-radius: 5px;
+    font-size: 15px;
+    color: black;
+    margin: 40px;
+    
+}
+
+
 .boks-c { grid-area: boks-c; }
 .boks-d { grid-area: boks-d; }
 .boks-e { grid-area: boks-e; }
 .boks-f { grid-area: boks-f; }
 .boks-g { grid-area: boks-g; }
 .boks-h { grid-area: boks-h; }
+.banner { grid-area: banner; }
