@@ -1,7 +1,7 @@
 .gridcontainer {
     min-height: 100%;
     display: grid;
-    grid-gap: 2px;
+    grid-gap: 0px;
     grid-template-columns: 50% 49%;
     grid-template-areas: 
     'header header'
@@ -122,28 +122,32 @@
     display: flex;
     flex-direction: column;
     padding: 3px;
-    background-color: whitesmoke;
     text-align: left;
     padding-left: 20%;
     padding-right: 20%;
     letter-spacing: 2px;
     border: 2px solid var(--color-border);
-    background-color: rgb(226, 231, 232);
+    background-color: rgb(11, 51, 59);
     position: relative;
+    color: whitesmoke;
 }
+ .boks-c{
+    background-color: #475059;
+    margin-top: 50px;
+ }
+ .boks-f{
+    background-color: #B3C8DF;
+    color: black;
+ }
+
+ .boks-g{
+    background-color: #B3C8DF;
+    color: black;
+    margin-top: 50px;
+ }
 
 
-.boks-c .logo,
-.boks-d.logo,
-.boks-e .logo,
-.boks-f .logo,
-.boks-g .logo,
-.boks-h .logo{
-    max-width: 50px;
-    opacity: 0.9;
-    position: relative;
-    align-self: center;
-}
+
 
 .boks-c p,
 .boks-d p,
@@ -164,6 +168,7 @@
     border: 2px solid var(--color-border);
     padding-left: 0px;
     padding-top: 0;
+    margin-top: 50px;
 }
 
 .boks-e{
@@ -187,8 +192,23 @@
     border: 2px solid var(--color-border);
     padding-left: 0px;
     padding-top: 0;
+    margin-top: 50px;
 }
 
+.boks-b a,
+.boks-c a,
+.boks-d a,
+.boks-e a,
+.boks-f a,
+.boks-g a{
+    background-color: white;
+    margin: 10px;
+    width: 150px;
+    border-radius: 5px;
+    font-size: 15px;
+    color: black;
+    display: flex;
+}
 
 .boks-c { grid-area: boks-c; }
 .boks-d { grid-area: boks-d; }
