@@ -18,7 +18,7 @@
 .boks-b {
     grid-area: boks-b;
     display: flex;
-    background:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url(/images/-®\ Fotograf\ Siv\ Sivertsen\ 88.jpg);
+    background:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url(../images/Fotograf\ Siv\ Sivertsen\ 88.jpg);
     background-size: cover;
     background-position: center;
     min-height: 500px;

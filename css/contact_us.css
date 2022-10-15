@@ -15,7 +15,7 @@
 
 .boks-b {
     grid-area: boks-b;
-    background-image: url(/images/Jarleyoga.jpg);
+    background-image: url(../images/Jarleyoga.jpg);
     background-size: cover;
     background-position: center;
     min-height: 300px;

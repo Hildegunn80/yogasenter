@@ -13,7 +13,7 @@ const htmlPages = [
         name: "Hjem"
     },
     {
-        file: "Coffee_Bars.html",
+        file: "coffee_bars.html",
         name: "Kurs"
     },
     {
