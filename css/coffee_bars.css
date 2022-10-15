@@ -8,7 +8,8 @@
     'boks-b boks-b'
     'boks-f boks-e'
     'boks-d boks-c'
-    'boks-g boks-h'
+    'boks-h boks-h'
+    'boks-g boks-g'
     'banner banner'
     'footer footer';
     background-color: var(--color-bg);
@@ -146,22 +147,25 @@
     color: whitesmoke;
 
 }
+.boks-g{
+    display: flex;
+    flex-direction: column;
+    padding: 3px;
+    text-align: left;
+    padding-left: 20%;
+    padding-right: 20%;
+    letter-spacing: 2px;
+    border: 2px solid var(--color-border);
+    background-color: #233840;
+    position: relative;
+    color: whitesmoke;
+
+}
  .boks-c{
     background-color: #475059;
     margin-top: 50px;
  }
  
- 
-
- .boks-g{
-    background-color: #B3C8DF;
-    color: black;
-    margin-top: 50px;
- }
-
-
-
-
 .boks-c p,
 .boks-d p,
 .boks-e p,
@@ -198,7 +202,7 @@
 .boks-h{
     color: white;
     position: relative;
-    background-image:linear-gradient(rgba(0, 0, 0, 0.1), rgba(0,0,0,0.1)),url(/images/Fotograf\ Siv\ Sivertsen\ 85.jpg);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.1), rgba(0,0,0,0.1)),url(/images/meditativhealing.jpg);
     min-height: 600px;
     background-size: cover;
     background-position: center;
@@ -206,6 +210,13 @@
     padding-left: 0px;
     padding-top: 0;
     margin-top: 50px;
+}
+
+.boks-h h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 50px;
 }
 
 .boks-b a,
@@ -222,6 +233,8 @@
     color: black;
     display: flex;
 }
+
+
 
 .banner {
     grid-area: banner;
