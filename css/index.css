@@ -214,3 +214,28 @@ font-size: 25px;
 }
 
 
+@media screen and (max-width: 1000px) {
+    .gridcontainer {
+        min-height: 100%;
+        display: grid;
+        grid-gap: 2px;
+        grid-template-columns: 99%;
+        grid-template-areas: 
+        'header'
+        'boks-b'
+        'banner'
+        'boks-c'
+        'boks-d'
+        'boks-e-changingimage'
+        'boks-f'
+        'boks-g'
+        'boks-h'
+        'banner-2'
+        'boks-j'
+        'boks-i'
+        'footer';
+        background-color: var(--color-bg);
+        text-align: center;
+    }
+     
+  }
