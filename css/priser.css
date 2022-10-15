@@ -2,15 +2,14 @@
     min-height: 100%;
     display: grid;
     grid-gap: 0px;
-    grid-template-columns: 50% 49%;
+    grid-template-columns: 33% 33% 32%;
     grid-template-areas: 
-    'header header'
-    'boks-b boks-b'
-    'boks-f boks-e'
-    'boks-d boks-c'
-    'boks-g boks-h'
-    'banner banner'
-    'footer footer';
+    'header header header'
+    'boks-b boks-b boks-b'
+    'boks-c boks-d boks-e'
+    'banner banner banner'
+    'boks-h boks-h boks-h'
+    'footer footer footer';
     background-color: var(--color-bg);
     text-align: center;
     background-color: whitesmoke;
@@ -49,6 +48,16 @@
     min-height: 800px;
 }
 
+.boks-h {
+    grid-area: boks-b;
+    display: flex;
+    background: url(../images/3cups.jpg); /* fallback */
+    background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(/images/patrick-malleret-p-v1DBkTrgo-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 1000px;
+}
+
 .boks-b h1 {
     letter-spacing: 0.1em; 
     font-size:4.5rem;
@@ -83,20 +92,12 @@
     font-weight: bold;
     max-width: 100%;
 }
-.boks-d h2{
-    text-align: center;
-    /*background-color: rgb(245, 245, 245,0.1);*/
-    color: whitesmoke;
-    position: absolute;
-    max-width: 400px;
-    text-align: center;
-    margin-left: 10px;  
-    padding-top: 10px;
-    margin-top: 10;
-    left: 20%;
-    top:10%;
-}
 
+
+.boks-d,
+.boks-g{
+    margin-right: 15px;
+}
 .boks-h h2{
     text-align: center;
     /*background-color: rgb(245, 245, 245,0.1);*/
@@ -112,14 +113,17 @@
 
 
 
-
+.boks-d .logo{
+    margin-top: 100px;
+    max-width: 300px;
+    align-self: center;
+}
 
 .boks-c,
 .boks-d,
 .boks-e,
 .boks-f,
-.boks-g,
-.boks-h {
+.boks-g {
     display: flex;
     flex-direction: column;
     padding: 3px;
@@ -128,27 +132,33 @@
     padding-right: 20%;
     letter-spacing: 2px;
     border: 2px solid var(--color-border);
-    background-color: hsl(190, 69%, 14%);
     position: relative;
-    color: whitesmoke;
+    color: black;
 }
  .boks-c{
     background-color: #475059;
-    margin-top: 50px;
+    margin-right: 20px;
+    color:white;
  }
- 
  .boks-f{
     background-color: #B3C8DF;
     color: black;
+    margin-right:10px ;
+ }
+ .boks-c{
+    background-color: rgb(64, 31, 31);
+    margin-right: 20px;
+    color:white;
+ }
+ .boks-e{
+    background-color:  #475059;
+    color:white;
  }
 
  .boks-g{
     background-color: #B3C8DF;
     color: black;
-    margin-top: 50px;
  }
-
-
 
 
 .boks-c p,
@@ -160,77 +170,19 @@
     line-height: 25px;
 }
 
-.boks-d{
-    color: white;
-    position: relative;
-    background-image:linear-gradient(rgba(0, 0, 0, 0.1), rgba(0,0,0,0.1)),url(/images/Fotograf\ Siv\ Sivertsen\ 88.jpg);
-    min-height: 600px;
-    background-size: cover;
-    background-position: center;
-    border: 2px solid var(--color-border);
-    padding-left: 0px;
-    padding-top: 0;
-    margin-top: 50px;
-}
 
-.boks-e{
-    color: white;
-    position: relative;
-    background-image:linear-gradient(rgba(0, 0, 0, 0.1), rgba(0,0,0,0.1)),url(/images/Fotograf\ Siv\ Sivertsen\ 96.jpg);
-    min-height: 600px;
-    background-size: cover;
-    background-position: center;
-    border: 2px solid var(--color-border);
-    padding-left: 0px;
-    padding-top: 0;
-}
-.boks-h{
-    color: white;
-    position: relative;
-    background-image:linear-gradient(rgba(0, 0, 0, 0.1), rgba(0,0,0,0.1)),url(/images/Fotograf\ Siv\ Sivertsen\ 85.jpg);
-    min-height: 600px;
-    background-size: cover;
-    background-position: center;
-    border: 2px solid var(--color-border);
-    padding-left: 0px;
-    padding-top: 0;
-    margin-top: 50px;
-}
-
-.boks-b a,
-.boks-c a,
-.boks-d a,
-.boks-e a,
-.boks-f a,
-.boks-g a{
-    background-color: white;
-    margin: 10px;
-    width: 150px;
-    border-radius: 5px;
-    font-size: 15px;
-    color: black;
-    display: flex;
-}
-
-.banner {
-    grid-area: banner;
-    letter-spacing: 0.08em;
-    background-color:   #401F1F;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    min-height: 250px;
-
-    color: white;
-}
-.banner a{
-    background-color: white;
-    width: 150px;
-    border-radius: 5px;
-    font-size: 15px;
-    color: black;
-    margin: 40px;
+.boks-h a{
+    border:#401F1F 2px solid;
+    color:#401F1F;
+    width: 300px;
+    border-radius: 20px;
+    margin: 30px;
+    height: 50px;
+    text-align: center;
+    justify-content: center;
+    right: 20%;
     
 }
-
 
 .boks-c { grid-area: boks-c; }
 .boks-d { grid-area: boks-d; }
