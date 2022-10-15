@@ -8,7 +8,7 @@
     'boks-b boks-b'
     'banner banner'
     'boks-c boks-d'
-    'boks-e-changingimage boks-f'
+    'boks-e boks-f'
     'boks-g boks-h'
     'banner-2 banner-2'
     'boks-j boks-i'
@@ -116,8 +116,8 @@
     background-color:  whitesmoke;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-.boks-e-changingimage {
-    grid-area:boks-e-changingimage;
+.boks-e {
+    grid-area: boks-e;
     position: relative;
     /*background-image:url(/images/-®\ Fotograf\ Siv\ Sivertsen\ 85.jpg);*/
     min-height: 600px;
@@ -126,6 +126,7 @@
     border: 2px solid var(--color-border);
     transition: background 2.0s ease-in-out;
 }
+
 .boks-h {
     grid-area: boks-h;
     position: relative;
@@ -175,8 +176,6 @@ font-size: 25px;
     font-weight: bold;
 }
 
-
-
 .boks-j {
     grid-area: boks-e;
     position: relative;
@@ -200,10 +199,7 @@ font-size: 25px;
     letter-spacing: 0.2em; 
     font-size:2rem;
     background-color: var(--color-ascent);
-    
 }
-
-
 
 .boks-i {
     grid-area: boks-i;
@@ -212,7 +208,6 @@ font-size: 25px;
 .boks-j {
     grid-area:boks-j;
 }
-
 
 @media screen and (max-width: 1000px) {
     .gridcontainer {
@@ -224,18 +219,21 @@ font-size: 25px;
         'header'
         'boks-b'
         'banner'
-        'boks-c'
-        'boks-d'
-        'boks-e-changingimage'
         'boks-f'
+        'boks-e'
         'boks-g'
         'boks-h'
         'banner-2'
-        'boks-j'
         'boks-i'
+        'boks-j'        
         'footer';
         background-color: var(--color-bg);
         text-align: center;
     }
-     
-  }
+
+    .banner,
+    .banner-2 {
+        display: none;
+    }
+
+}

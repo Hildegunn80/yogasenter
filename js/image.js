@@ -1,6 +1,6 @@
 
 function changeBg() {
-    changeBoxBG(".boks-e-changingimage");
+    changeBoxBG(".boks-e");
     changeBoxBG(".boks-h");
     changeBoxBG(".boks-j");
 }

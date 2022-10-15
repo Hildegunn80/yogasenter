@@ -147,7 +147,9 @@ nav li {
 
 
 /* ********************************************** size < 1000px  */
+
 @media only screen and (max-width:1030px) {
+    /*
     .gridcontainer {
         grid-template-areas: 
         "header"
@@ -165,7 +167,7 @@ nav li {
         "footer"
         ;    
     }
-
+    */
     .current {
         background-color: var(--color-coffe);
     }
