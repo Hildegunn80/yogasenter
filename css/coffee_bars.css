@@ -263,3 +263,31 @@
 .boks-g { grid-area: boks-g; }
 .boks-h { grid-area: boks-h; }
 .banner { grid-area: banner; }
+
+
+@media screen and (max-width: 1000px) {
+    .gridcontainer {
+        min-height: 100%;
+        display: grid;
+        grid-gap: 2px;
+        grid-template-columns: 99%;
+        grid-template-areas: 
+        'header'
+        'boks-b'
+        'boks-f'
+        'boks-e'
+        'boks-d'
+        'boks-c'
+        'boks-h'
+        'boks-g'
+        'banner'
+        'boks-i'
+        'boks-j'        
+        'footer';
+        background-color: var(--color-bg);
+        text-align: center;
+    }
+    .banner{
+        display: none;
+    }
+}
