@@ -69,7 +69,7 @@ function addTitle(menu) {
 
 function addNav(menu) {
     let fileName = window.location.pathname.split("/").pop();
-    console.log("file name = " + fileName );
+    console.log(" - current file : " + fileName );
 
     let nav = document.createElement("nav");
     menu.appendChild(nav);
@@ -120,9 +120,10 @@ function loadMenu() {
     const menu = document.querySelector(menuClass);
 
     if (menu == null) {
-        console.log("Error Menu class not found in html document.");
+        console.log("Error Menu '"+menuClass+"' class to appeend menu into, not found in html document.");
         return;        
     }
+    console.log("Load Menu '"+menuClass+"' class detected successfully.");
 
     // add divs into class
     addLogo(menu);
