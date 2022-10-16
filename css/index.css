@@ -245,4 +245,7 @@ font-size: 25px;
     .boks-b {        
         min-height: 250px;        
     }
+    .gridcontainer p{
+        font-size: 15px;
+    }
 }
