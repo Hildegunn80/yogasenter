@@ -139,4 +139,8 @@
     .boks-f { grid-area: boks-e; }
     .boks-i { grid-area: boks-j; }
     .boks-j { grid-area: boks-i; }
+
+    .boks-{
+        min-height: 370px;
+    }
 }

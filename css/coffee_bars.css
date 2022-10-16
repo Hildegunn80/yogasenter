@@ -290,4 +290,8 @@
     .banner{
         display: none;
     }
+    .boks-b{
+        min-height: 370px;
+    }
+
 }

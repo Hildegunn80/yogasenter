@@ -211,6 +211,11 @@
         background-color: var(--color-bg);
         text-align: center;
     }
-
+    .boks-b {        
+        min-height: 370px;  
 }
 
+@media screen and (max-width: 600px) {
+    .boks-b {        
+        min-height: 250px;        
+    }
