@@ -30,7 +30,6 @@
     vertical-align: middle;
     text-align: center;
     position: relative;
-    z-index: 4;
     background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0,0,0,.8)),url(../images/Fotograf\ Siv\ Sivertsen\ 111.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -119,7 +118,7 @@
 .boks-e {
     grid-area: boks-e;
     position: relative;
-    /*background-image:url(/images/-®\ Fotograf\ Siv\ Sivertsen\ 85.jpg);*/
+    background-image:url(../images/-®\ Fotograf\ Siv\ Sivertsen\ 85.jpg);
     min-height: 600px;
     background-size: cover;
     background-position: center;
@@ -211,9 +210,6 @@ font-size: 25px;
 
 @media screen and (max-width: 1000px) {
     .gridcontainer {
-        min-height: 100%;
-        display: grid;
-        grid-gap: 2px;
         grid-template-columns: 99%;
         grid-template-areas: 
         'header'
@@ -231,22 +227,22 @@ font-size: 25px;
         text-align: center;
     }
 
+    .boks-b {        
+        min-height: 370px;        
+    }
+
     .banner,
     .banner-2 {
         display: none;
     }
+
     .img-area {
-        display: table-cell;
-        vertical-align: middle;
-        text-align: center;
-        position: relative;
-        z-index: 4;
         background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0,0,0,.8)),url(../images/Fotograf\ Siv\ Sivertsen\ 111small.jpg);
-        background-size: 100%;
-        background-repeat: no-repeat;
     }
-   
-     
-    
-    
+}
+
+@media screen and (max-width: 600px) {
+    .boks-b {        
+        min-height: 250px;        
+    }
 }
