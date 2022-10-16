@@ -117,6 +117,8 @@
     margin-top: 100px;
     max-width: 300px;
     align-self: center;
+    transform: translate(-9%,-40%);
+    
 }
 
 .boks-c,
