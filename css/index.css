@@ -78,7 +78,7 @@
 }
 
 .boks-b a {
-    font-size:50px;
+    font-size:100px;
     justify-content: center;
     position: absolute;
     left: 30%;
@@ -235,5 +235,21 @@ font-size: 25px;
     .banner-2 {
         display: none;
     }
-
+    .img-area {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        position: relative;
+        z-index: 4;
+        background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0,0,0,.8)),url(../images/Fotograf\ Siv\ Sivertsen\ 111small.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+   
+     .boks-b,
+     .img-area,
+     .single-img{
+        background-size: cover;
+     }
+    
 }
