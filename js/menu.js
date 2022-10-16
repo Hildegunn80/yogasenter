@@ -22,7 +22,7 @@ const htmlPages = [
     },
     {
         file: "locations.html",
-        name: "Kundalini yoga"
+        name: "KEY yoga"
     },
     {
         file: "priser.html",
