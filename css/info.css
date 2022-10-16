@@ -181,5 +181,8 @@
     .boks-b{
         background-size: cover;
     }
+    .boks-b {        
+        min-height: 370px;        
+    }
 
 }
