@@ -135,11 +135,7 @@
     position: relative;
     color: black;
 }
- .boks-c{
-    background-color: #475059;
-    margin-right: 20px;
-    color:white;
- }
+
  .boks-f{
     background-color: #B3C8DF;
     color: black;
@@ -213,9 +209,29 @@
     }
     .boks-b {        
         min-height: 370px;  
+        
+}
+ .boks-f,
+ .boks-d,
+ .boks-g
+ .boks-c{
+    margin-right:0px;
+ }
+ .banner h2{
+    font-size: 30px;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+ }
 }
 
 @media screen and (max-width: 600px) {
     .boks-b {        
         min-height: 250px;        
     }
+ .boks-f,
+ .boks-d,
+ .boks-g,
+ .boks-c{
+    margin-right:0px;
+}
+}
