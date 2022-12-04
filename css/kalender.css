@@ -1,0 +1,50 @@
+li{
+    list-style: none;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.gridcontainer{
+    display: grid;
+    grid-template-columns: 50px auto;
+    grid-template-rows: auto;
+    gap: 1px 1px;
+    grid-template-areas: 
+    "header header"
+    ".header-calender"
+    "boks-timeslotscontainer main"
+    "footer footer";
+
+}
+
+.weekdays,
+.daynumbers{
+  display:grid;
+  grid-template-columns: repeat(7,1fr);  
+}
+
+
+
+.weekdays{
+    background: lightblue;
+}
+
+.header-calender{
+    background: gray;
+    grid-area: header-calender;
+}
+.boks-timeslotscontainer{
+grid-area: boks-timeslotscontainer;
+background: pink;
+justify-content: left;
+
+}
+
+.boks-eventscontainer{
+
+}

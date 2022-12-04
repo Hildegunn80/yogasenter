@@ -35,6 +35,11 @@ const htmlPages = [
     {
         file: "contacs_us.html",
         name: "Kontakt"
+    },
+
+    {
+        file: "kurskalender.html",
+        name: "Kurskalender"
     }
 ];
 
