@@ -13,6 +13,13 @@
     text-align: center;
 }
 
+.velg-kurs{
+    display: flex;
+    padding: 5px;
+    margin: 7px;
+    align-items: left;
+}
+
 .boks-b {
     grid-area: boks-b;
     background-image: url(../images/Jarleyoga.jpg);

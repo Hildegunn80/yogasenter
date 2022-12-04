@@ -74,27 +74,38 @@ justify-content: left;
     display: grid;
     grid-template-columns: repeat(7,1fr);
     grid-template-rows: repeat(36,1fr);
-    grid-area: main;
+    grid-area:main;
     position: relative;
 
 }
 .slot{
     position: absolute;
-    background: darkslategray;
+    background: orange;
     border-radius: 5px;
     color: white;
-    font-size: 12px;
+    font-size: 20px;
     z-index: 5;
+    padding: 5px;
 }
 
 .slot-1{
-    height: 30px;
+    height: 120px;
     /**
     abs(9-10)=1*60= 60min
     
     240/15=16+;
     */
-    grid-row: 17;
-    grid-column: 1;;
+    grid-row: 5;
+    grid-column: 1;
+}
+.slot-2{
+    height: 120px;
+    /**
+    abs(9-10)=1*60= 60min
+    
+    240/15=16+;
+    */
+    grid-row: 5;
+    grid-column: 3;
 }
 

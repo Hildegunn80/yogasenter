@@ -30,16 +30,24 @@
         </div>
 
         <div class="boks-d">
-            <h2>Send melding</h2>
+            <h2>Påmelding</h2>
             
             <form action="/contacs_us_sent.html">
                 <input type="text" id="fname" name="fname" value="Navn">
                 <input type="text" id="E-mail" name="email" value="E-post">
                 <input type="tel" id="Mobile" name="mobile" value="Mobil">
                 <input type="text" id="Adresse" name="adresse" value="Adresse">
-                <input type="text" id="emne" name="emne" value="Emne">
+                <label for="kurs">Velg kurs</label>
+                <div class="velg-kurs">
+                <p>Key-Yoga mandag</p>
+                <input type="checkbox" name="Key-Yoga mandag" id="Key-Yoga mandag">
+                <p>Key-Yoga onsdag</p>
+                <input type="checkbox" name="Key-Yoga onsdag" id="Key-Yoga onsdag">
+                <p>Key-Yoga begge dager</p>
+                <input type="checkbox" name="Key-Yoga begge dager" id="Key-Yoga begge dager">
+            </div>
 
-                <textarea name="message" cols="50" rows="10">Din melding</textarea> 
+                <textarea name="message" cols="50" rows="10">Din melding (frivillig)</textarea> 
                 <input type="submit" value="Send">
             </form>
         </div>
