@@ -13,13 +13,6 @@
     text-align: center;
 }
 
-.velg-kurs{
-    display: flex;
-    padding: 5px;
-    margin: 7px;
-    align-items: left;
-    flex-direction: column;
-}
 
 .boks-b {
     grid-area: boks-b;
