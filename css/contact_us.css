@@ -101,6 +101,7 @@ ul {
     grid-area: header-calender;
     background: lightblue;
     min-height: 2.3em;
+    text-align: left;
 }
 
 .timeslots-container {
