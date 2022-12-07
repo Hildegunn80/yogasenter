@@ -13,19 +13,18 @@
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/loaders.js"></script>
     
-    <link rel="stylesheet" href="css/kalender.css">
     <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/kalender.css">
 
-    <script src="js/openingTime.js"></script>
-    
     <title>Kundaliniyoga|Stord Yogasenter</title>
 </head>
 
 <body>
     <div class="gridcontainer">
         <div class="header"></div>
-        <div class="kalender-container">
-        <div class="header-calender">
+
+        <div class="calendar-container">
+
             <ul class="weekdays">
                 <li>Mandag</li>
                 <li>Tirsdag</li>
@@ -35,38 +34,39 @@
                 <li>Lørdag</li>
                 <li>Søndag</li>
             </ul>
+            
+            <div class="timeslots-container">
+                <ul class="timeslots">
+                    <li>14</li>
+                    <li>15</li>
+                    <li>16</li>
+                    <li>17</li>
+                    <li>18</li>
+                    <li>19</li>
+                    <li>20</li>
+                    <li>21</li>
+                    <li>22</li>
+                </ul>
             </div>
-        </div>
-
         
-        <div class="boks-timeslotscontainer">
-            <ul class="timeslots">
-                <li>14</li>
-                <li>15</li>
-                <li>16</li>
-                <li>17</li>
-                <li>18</li>
-                <li>19</li>
-                <li>20</li>
-                <li>21</li>
-                <li>22</li>
-
-            </ul>
-        </div>
-        <div class="boks-eventscontainer">
-            <div class="slot slot-1">
-                <div class="eventstatus">
-                    <span>Key-Yoga</span>
+            <div class="event-container">
+                <div class="slot slot-1">
+                    <div class="event-status">
+                        <span>Key-Yoga<br>19:30</span>
+                    </div>
                 </div>
                 <div class="slot slot-2">
-                    <div class="eventstatus">
-                        <span>meditasjon</span>
+                    <div class="event-status">
+                        <span>Key-Yoga<br>17:30</span>
                     </div>
+                </div>
             </div>
+
         </div>
-    </div>
+
         <footer id="loadedFooter"></footer>
         <script src="js/menu.js"></script>
     </div>
+
 </body>
 </html>

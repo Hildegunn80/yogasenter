@@ -1,125 +1,106 @@
-li{
+li {
     list-style: none;
 }
 
-ul{
+ul {
     margin: 0;
     padding: 0;
 }
 
-.gridcontainer{
-        min-height: 100%;
-        display: grid;
-        grid-gap: 2px;
-        /*grid-template-columns: 50% 50%;*/
-        grid-template-rows: auto auto 1fr auto;
-        grid-template-areas: 
-        'header header'
-        'calender-kontainer calender-kontainer'
-        'footer footer';
-        background-color: var(--color-bg);
-        text-align: center;
-    }
-
-
-.gridcontainer{
+.gridcontainer {
     display: grid;
-    grid-template-columns: 50% 49%;
+    grid-template-columns: 50px auto 50px;
     grid-template-rows: auto;
     gap: 1px 1px;
     grid-template-areas: 
-    "header header"
-    ".header-calender"
-    "boks-timeslotscontainer main"
-    "footer footer";
-
+    "header header header"
+    ". calendar-container ."
+    ". . ."
+    "footer footer footer";
+    min-height: 100%;
 }
 
+.calendar-container {    
+    grid-area: calendar-container;
+    display: grid;
+    grid-template-columns: 50px auto;
+    grid-template-rows: auto;
+    gap: 1px 1px;
+    grid-template-areas:
+    ". header-calender"
+    "timeslots-container event-container";
+    border: 1px solid black;
+}
 
 .weekdays,
-.daynumbers{
+.daynumbers {
   display:grid;
-  grid-template-columns: repeat(7,1fr);  
+  grid-template-columns: repeat(7,1fr);
 }
 
-
-
-.weekdays{
-    background: lightblue;
-}
-
-.header-calender{
-    background: gray;
+.weekdays {
     grid-area: header-calender;
-
-}
-.boks-timeslotscontainer{
-grid-area: boks-timeslotscontainer;
-display: flex;
-background: whitesmoke;
-justify-content: left;
+    background: lightblue;
+    min-height: 0em;
 }
 
-.timeslots{
+.timeslots-container {
+    grid-area: timeslots-container;
+    background: lightgray;
+    justify-content: left;
+}
+
+.timeslots {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: darkgrey;
-    min-width: 30px;
 }
-.timeslots li{
+
+.timeslots li {
     min-height: 60px;
 }
-.timeslots li:after{
+
+.timeslots li:after {
     content: "";
     position: absolute;
-    left: 10px;
-    width: 100%;
+    left: 50px;
+    width: 90%;
     height: 1px;
-    background: gray;
+    background: lightgray;
     z-index: 1;
 }
 
-.weekdays{
-    min-height: 2.3em;
-}
-
-.boks-eventscontainer{
+.event-container {
+    grid-area: event-container;
     display: grid;
     grid-template-columns: repeat(7,1fr);
     grid-template-rows: repeat(36,1fr);
-    grid-area:main;
     position: relative;
-
 }
-.slot{
+
+.slot {
     position: absolute;
     background: orange;
     border-radius: 5px;
     color: white;
-    font-size: 20px;
-    z-index: 5;
-    padding: 5px;
+    font-size: 24px;
+    z-index: 5;    
+    border: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
 }
 
-.slot-1{
-    height: 120px;
-    /**
-    abs(9-10)=1*60= 60min
-    
-    240/15=16+;
-    */
-    grid-row: 5;
+.slot-1 {
+    height: 120px;    
+    grid-row: 22;
     grid-column: 1;
 }
-.slot-2{
-    height: 120px;
-    /**
-    abs(9-10)=1*60= 60min
-    
-    240/15=16+;
-    */
-    grid-row: 5;
+
+.slot-2 {
+    height: 120px;    
+    grid-row: 14;
     grid-column: 3;
 }
+
 

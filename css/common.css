@@ -25,7 +25,7 @@ body {
     width: 100%;
     margin: 0;
     box-sizing: border-box;
-    background-color: rgb(241, 232, 232);
+    background-color: var(--color-bg);
     font-family: 'Franklin Gothic Medium' , Verdana, sans-serif;
 }
 
@@ -90,6 +90,7 @@ footer {
     justify-content: center;
     background-color:rgb(55, 82, 110);
     color: white;
+    align-items: center;
 }
 
 footer i {
