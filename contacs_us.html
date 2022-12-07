@@ -31,12 +31,21 @@
 
         <div class="boks-d">
             <h2>Påmelding</h2>
-            
-            <form action="/contacs_us_sent.html">
-                <input type="text" id="fname" name="fname" value="Navn">
-                <input type="text" id="E-mail" name="email" value="E-post">
+            <form id="contactForm">
+                <label for="fname"> Navn
+               <input type="text" id="fname" name="fname" value="Navn">
+                </label>
+                <div class="form-error" id="firstnameError">Vennligst fyll inn navn</div>
+                <label for="E-mail"> Email
+                <input type="text" id="E-mail" name="email" value="E-mail">
+                </label>
+                <div class="email-error" id="emailError">Vennligst fyll inn email</div>
+                <label for="Mobile">Mobil
                 <input type="tel" id="Mobile" name="mobile" value="Mobil">
+                 </label>
+                 <label for="Adresse"> Adresse
                 <input type="text" id="Adresse" name="adresse" value="Adresse">
+                 </label>
                 <label for="kurs">Velg kurs</label>
                 <div class="velg-kurs">
                 <input type="checkbox" name="Key-Yoga mandag" id="Key-Yoga-mandag"value="Key-yoga mandag">
@@ -52,11 +61,12 @@
 
                 <textarea name="message" cols="50" rows="10">Din melding (frivillig)</textarea> 
                 <input type="submit" value="Send">
-            </form>
+        </form>
         </div>
-
         <footer id="loadedFooter"></footer>
         <script src="js/menu.js"></script>
+        <script src="js/contact.js"></script>
+
     </div>
 </body>
 </html>
