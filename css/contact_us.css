@@ -1,18 +1,27 @@
+li {
+    list-style: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
 .gridcontainer {
     min-height: 100%;
     display: grid;
     grid-gap: 2px;
-    /*grid-template-columns: 50% 50%;*/
+    grid-template-columns: 100px auto auto 100px;
     grid-template-rows: auto auto 1fr auto;
     grid-template-areas: 
-    'header header'
-    'boks-b boks-c'
-    'boks-d boks-d'
-    'footer footer';
+    'header header header header'
+    'boks-b boks-b boks-c boks-c'
+    ". calendar-container calendar-container ."
+    'boks-d boks-d boks-d boks-d'
+    'footer footer footer footer';
     background-color: var(--color-bg);
     text-align: center;
 }
-
 
 .boks-b {
     grid-area: boks-b;
@@ -67,6 +76,90 @@
     padding: 5%;
     text-align: left;
     background-color: var(--color-bg-light);
+}
+
+.calendar-container {    
+    grid-area: calendar-container;
+    display: grid;
+    grid-template-columns: 50px auto;
+    grid-template-rows: auto;
+    gap: 1px 1px;
+    grid-template-areas:
+    ". header-calender"
+    "timeslots-container event-container";
+    border: 1px solid black;
+    margin-top: 50px;
+}
+
+.weekdays,
+.daynumbers {
+  display:grid;
+  grid-template-columns: repeat(7,1fr);
+}
+
+.weekdays {
+    grid-area: header-calender;
+    background: lightblue;
+    min-height: 2.3em;
+}
+
+.timeslots-container {
+    grid-area: timeslots-container;
+    background: lightgray;
+    justify-content: left;
+}
+
+.timeslots {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timeslots li {
+    min-height: 60px;
+}
+
+.timeslots li:after {
+    content: "";
+    position: absolute;
+    left: 120px;
+    width: 80%;
+    height: 1px;
+    background: lightgray;
+    z-index: 1;
+}
+
+.event-container {
+    grid-area: event-container;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows: repeat(36,1fr);
+    position: relative;
+}
+
+.slot {
+    position: absolute;
+    background: orange;
+    border-radius: 5px;
+    color: white;
+    font-size: 24px;
+    z-index: 5;    
+    border: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+}
+
+.slot-1 {
+    height: 120px;    
+    grid-row: 23;
+    grid-column: 1;
+}
+
+.slot-2 {
+    height: 120px;    
+    grid-row: 15;
+    grid-column: 3;
 }
 
 

@@ -22,7 +22,7 @@ const htmlPages = [
     },
     {
         file: "locations.html",
-        name: "KEY yoga"
+        name: "Key-yoga"
     },
     {
         file: "priser.html",
@@ -34,13 +34,8 @@ const htmlPages = [
     },
     {
         file: "contacs_us.html",
-        name: "Kontakt"
-    },
-
-    {
-        file: "kurskalender.html",
-        name: "Kurskalender"
-    }
+        name: "Påmelding"
+    }    
 ];
 
 /* CODE */
