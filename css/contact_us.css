@@ -35,6 +35,7 @@ ul {
     display: flex;
     flex-direction: column;
     max-width: 600px;
+    background-color: rgb(240, 238, 238);
 }
 
 .boks-d form input {
@@ -68,14 +69,20 @@ ul {
 }
 
 .boks-c{
-    background: whitesmoke;
+    background:  #b8ddec;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .boks-d {
     grid-area: boks-d;
     padding: 5%;
     text-align: left;
-    background-color: var(--color-bg-light);
+    background-color: rgb(238, 240, 242);
+}
+#contactForm{
+    background-color: white;
+    padding: 15px;
+    
 }
 
 .calendar-container {    
@@ -169,15 +176,41 @@ ul {
         min-height: 100%;
         display: grid;
         grid-gap: 2px;
-        grid-template-columns: 99%;
+        grid-template-columns: 100px auto auto 100px;
+        grid-template-rows: auto auto 1fr auto;
         grid-template-areas: 
         'header'
-        'boks-b'
         'boks-c'
-        'boks-d'        
+        'boks-b '
+        "calendar-container"
+        'boks-d'
         'footer';
-        background-color: var(--color-bg);
-        text-align: center;
-    }
+}
+.calendar-container {    
+    grid-area: calendar-container;
+    display: grid;
+    grid-template-columns: 50px auto;
+    grid-template-rows: auto;
+    gap: 1px 1px;
+    grid-template-areas:
+    ". header-calender"
+    "event-container";
+    border: 1px solid black;
+    margin-top: 50px;
+    max-width: 200px;
+}
+.timeslots li {
+    min-height: 30px;
+}
+.slot-1{
+height: 30px;
+}
+
+.slot-2{
+height: 30px;
+}
+.slot{
+    font-size: 12px;
+}
 
 }
