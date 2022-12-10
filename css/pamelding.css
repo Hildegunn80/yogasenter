@@ -35,7 +35,7 @@ ul {
     display: flex;
     flex-direction: column;
     max-width: 600px;
-    background-color: rgb(240, 238, 238);
+    background-color: rgb(255, 255, 255);
 }
 
 .boks-d form input {
