@@ -170,6 +170,12 @@ ul {
     grid-column: 3;
 }
 
+/* form valid*/
+.form-error,
+.email-error {
+    color: red;
+    font-size: small;
+}
 
 @media screen and (max-width: 1000px) {
     .gridcontainer {
@@ -202,6 +208,12 @@ ul {
 .timeslots li {
     min-height: 20px;
 }
+
+.timeslots li:after {
+    left: 50px;
+    width: 95%;
+}
+
 .slot-1{
 height: 25px;
 }
@@ -217,3 +229,4 @@ font-size: 12px;
 font-style: italic;
 }
 }
+
