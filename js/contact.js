@@ -13,11 +13,21 @@ const address = document.querySelector("#address");
 const addressError = document.querySelector("#addressError");
 
 
+const chkMelding = document.querySelector("#chkMelding");
+const chkKeyYogaMandag = document.querySelector("#chkKeyYogaMandag");
+const chkKeyYogaOnsdag = document.querySelector("#chkKeyYogaOnsdag");
+const chkVennepris = document.querySelector("#chkVennepris");
+const ChkMeditativHealing = document.querySelector("#ChkMeditativHealing");
+
 function validateForm() {
+
+    console.log("chk value: " + ChkMeditativHealing.checked);
+
     try {
         event.preventDefault();
         let status = true;
 
+        if(!isAnyActionSelected()) status = false;
         if(!validate(inputname,inputnameError,5)) status = false;
         if(!validate(mobile,mobileError,8)) status = false;
         if(!validate(address,addressError,10)) status = false;
@@ -28,6 +38,23 @@ function validateForm() {
     catch(error) {
         createHtmlError(error);
     }
+}
+
+function isAnyActionSelected() {
+    if (ChkMeditativHealing.checked) return true;
+    if (chkMelding.checked) return true;
+    if (chkKeyYogaMandag.checked) return true;
+    if (chkKeyYogaOnsdag.checked) return true;
+    if (chkVennepris.checked) return true;
+    
+    return false;
+}
+
+function hideErrors() {
+    inputnameError.style.display = "none";
+    mobileError.style.display = "none";
+    addressError.style.display = "none";
+    emailError.style.display = "none";
 }
 
 function showValidated(status) {
@@ -104,3 +131,4 @@ function createHtmlError(error) {
 
 console.log("Form validator loaded...");   
 form.addEventListener("submit",validateForm);
+window.onload = hideErrors();
