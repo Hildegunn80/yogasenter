@@ -233,6 +233,15 @@
     color: black;
     display: flex;
 }
+.boks-b a:hover,
+.boks-c a:hover,
+.boks-d a:hover,
+.boks-e a:hover,
+.boks-f a:hover,
+.boks-g a:hover{
+    background-color: rgb(247, 243, 243);
+    
+}
 
 
 
