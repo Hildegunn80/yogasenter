@@ -202,6 +202,12 @@ ul {
 .timeslots li {
     min-height: 20px;
 }
+
+.timeslots li:after {
+    left: 50px;
+    width: 95%;
+}
+
 .slot-1{
 height: 25px;
 }
