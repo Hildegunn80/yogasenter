@@ -159,13 +159,13 @@ ul {
 }
 
 .slot-1 {
-    height: 120px;    
+    height: 70px;    
     grid-row: 23;
     grid-column: 1;
 }
 
 .slot-2 {
-    height: 120px;    
+    height: 70px;    
     grid-row: 15;
     grid-column: 3;
 }
