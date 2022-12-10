@@ -239,11 +239,11 @@
 .banner {
     grid-area: banner;
     letter-spacing: 0.08em;
-    background-color:   #401F1F;
+    background-color:   white;
     font-family: Georgia, 'Times New Roman', Times, serif;
     min-height: 250px;
 
-    color: white;
+    color: black;
 }
 .banner a{
     background-color: white;
@@ -252,6 +252,7 @@
     font-size: 15px;
     color: black;
     margin: 40px;
+    border:solid 2px black;
     
 }
 

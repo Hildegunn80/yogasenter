@@ -117,7 +117,7 @@
     margin-top: 100px;
     max-width: 300px;
     align-self: center;
-    transform: translate(-%,-40%);
+    transform: translate(-5%,-20%);
     
 }
 
@@ -224,6 +224,10 @@
     font-style: italic;
     font-family: Georgia, 'Times New Roman', Times, serif;
  }
+ .boks-d .logo{
+    display: none;
+    
+}
 }
 
 @media screen and (max-width: 600px) {
@@ -236,4 +240,5 @@
  .boks-c{
     margin-right:0px;
 }
+
 }
