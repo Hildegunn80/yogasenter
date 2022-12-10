@@ -170,6 +170,12 @@ ul {
     grid-column: 3;
 }
 
+/* form valid*/
+.form-error,
+.email-error {
+    color: red;
+    font-size: small;
+}
 
 @media screen and (max-width: 1000px) {
     .gridcontainer {
@@ -223,3 +229,4 @@ font-size: 12px;
 font-style: italic;
 }
 }
+

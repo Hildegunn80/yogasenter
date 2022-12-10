@@ -69,22 +69,33 @@
 
         <div class="boks-d">
             <h2>Påmelding</h2>
-            <form action="/"method="GET">
-            <form id="contactForm">
-                <label for="fname"> Navn</label>
-                    <input type="text" id="fname" name="fname" value="Navn">
+            <form action="/"method="GET" id="contactForm">
                 
-                <div class="form-error" id="firstnameError">Vennligst fyll inn navn</div>
-                <label for="E-mail"> Email </label>
-                    <input type="text" id="E-mail" name="email" value="E-mail">
-               
-                <div class="email-error" id="emailError">Vennligst fyll inn email</div>
-                <label for="Mobile">Mobil</label>
-                    <input type="tel" id="Mobile" name="mobile" value="Mobil">
+                <label>
+                    Navn (påkrevd)
+                    <input name="inputname" id="inputname" />
+                </label>
+                <div class="form-error" id="inputnameError">Vennligst fyll inn navn</div>
                 
-                <label for="Adresse"> Adresse</label>
-                    <input type="text" id="Adresse" name="adresse" value="Adresse">
+                <label>
+                    Email (påkrevd)
+                    <input name="email" id="email" />
+                </label>
+                <div class="form-error" id="emailError">Please enter a valid email address</div>
+            
+                <label>
+                    Mobil (påkrevd)
+                    <input name="mobile" id="mobile" />
+                </label>
+                <div class="form-error" id="mobileError">Please enter a valid phone number</div>
                 
+                <label>
+                    Address (påkrevd)
+                    <input name="address" id="address" />
+                </label>
+                <div class="form-error" id="addressError">Please enter your address, at least 5 characters</div>
+
+
                 <label for="kurs">Valg</label>
                 <div class="velg-kurs">
                     <input type="checkbox" name="Send melding" id="melding">
@@ -96,19 +107,19 @@
                     <input type="checkbox" name="Key-Yoga onsdag" id="Key-Yoga onsdag">
                     <label for="Key-Yoga onsdag">Key-Yoga onsdag</label>
                     <br>
-                    <input type="checkbox"  name="Key-Yoga begge dager" id="Key-Yoga begge dager"></input>
-                    <label for="Key-Yoga begge dager">Key-Yoga begge dager</label> 
+                    <input type="checkbox" name="vennepris" id="vennepris">
+                    <label for="Vennepris/parpris">Vennepris/parpris (info i meldingsboks)</label>
                     <br>
                     <input type="checkbox"  name="Meditativ healing" id="Meditativ healing"></input>
-                    <label for="Meditativ healing">Meditative healing (send forespørsel om time)</label>                       
+                    <label for="Meditativ healing">Meditative healing (send forespørsel om time)</label>
                 </div>
 
-                    <textarea name="message" cols="50" rows="10">Din melding (frivillig)</textarea> 
-                    <input type="submit" value="Send">
+                <textarea name="message" cols="50" rows="10">Din melding (frivillig)</textarea> 
+                <input type="submit" value="Send">
             </form>
-        </form>
-        </div>
 
+            <div class="form-validated"></div>
+        </div>
 
         <footer id="loadedFooter"></footer>
         <script src="js/menu.js"></script>
