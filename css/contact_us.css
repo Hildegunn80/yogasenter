@@ -197,20 +197,23 @@ ul {
     "event-container";
     border: 1px solid black;
     margin-top: 50px;
-    max-width: 200px;
+    
 }
 .timeslots li {
-    min-height: 30px;
+    min-height: 20px;
 }
 .slot-1{
-height: 30px;
+height: 25px;
 }
 
 .slot-2{
-height: 30px;
+height: 25px;
 }
 .slot{
-    font-size: 12px;
+    font-size: 10px;
 }
-
+h1{
+font-size: 12px;
+font-style: italic;
+}
 }
