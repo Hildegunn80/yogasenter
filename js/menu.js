@@ -17,11 +17,11 @@ const htmlPages = [
         name: "Kurs"
     },
     {
-        file: "about_us.html",
+        file: "Instruktor.html",
         name: "Instruktør"
     },
     {
-        file: "locations.html",
+        file: "Key-yoga.html",
         name: "Key-yoga"
     },
     {
@@ -33,7 +33,7 @@ const htmlPages = [
         name: "Info"
     },
     {
-        file: "contacs_us.html",
+        file: "pamelding.html",
         name: "Påmelding"
     }    
 ];
