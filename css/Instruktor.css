@@ -45,8 +45,8 @@
 .boks-c {
     padding-top: 20px;
     grid-area: boks-c;
-    background-color: rgb(64, 31, 31);
-    color:var(--color-links);
+    background-color: white;
+    color:black;
     text-align: left;
     padding-left: 10px;
     letter-spacing: 2px;
