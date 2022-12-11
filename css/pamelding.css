@@ -215,6 +215,7 @@ ul {
 .timeslots li:after {
     left: 50px;
     width: cover;
+    display: none;
 }
 
 .slot-1{
