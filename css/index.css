@@ -174,6 +174,11 @@ font-size: 25px;
     color: var(--color-links);
     font-weight: bold;
 }
+.boks-f a:hover,
+.boks-g a:hover{
+   background-color: #6d8aaa;  
+
+}
 
 .boks-j {
     grid-area: boks-e;

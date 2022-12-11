@@ -218,13 +218,17 @@ ul {
     margin-top: 50px;
     
 }
+.boks-d h2{
+    font-size: 30px;
+}
 .timeslots li {
     min-height: 20px;
 }
 
 .timeslots li:after {
     left: 50px;
-    width: 95%;
+    width: cover;
+    display: none;
 }
 
 .slot-1{
@@ -235,11 +239,11 @@ height: 25px;
 height: 25px;
 }
 .slot{
-    font-size: 10px;
+    font-size: 8px;
 }
-h1{
-font-size: 12px;
-font-style: italic;
+.boks-c h1{
+font-size: 30px;
+font-style: regular;
 }
 }
 
