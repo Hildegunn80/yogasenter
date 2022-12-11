@@ -177,6 +177,19 @@ ul {
     font-size: small;
 }
 
+.mailStatus {
+    color: black;
+    background-color:lightblue;
+    border-radius: 5px;
+    border: solid 1px black;
+    position: absolute;
+    left: 30%;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+
+}
+
 @media screen and (max-width: 1000px) {
     .gridcontainer {
         min-height: 100%;

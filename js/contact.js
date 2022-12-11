@@ -12,16 +12,18 @@ const emailError = document.querySelector("#emailError");
 const address = document.querySelector("#address");
 const addressError = document.querySelector("#addressError");
 
-
+// bind checkboxes
 const chkMelding = document.querySelector("#chkMelding");
 const chkKeyYogaMandag = document.querySelector("#chkKeyYogaMandag");
 const chkKeyYogaOnsdag = document.querySelector("#chkKeyYogaOnsdag");
 const chkVennepris = document.querySelector("#chkVennepris");
 const ChkMeditativHealing = document.querySelector("#ChkMeditativHealing");
 
-function validateForm() {
+const msgbox = document.getElementById("msgbox");
 
-    console.log("chk value: " + ChkMeditativHealing.checked);
+
+function validateForm() {
+    //console.log("chk value: " + ChkMeditativHealing.checked);
 
     try {
         event.preventDefault();
@@ -34,10 +36,45 @@ function validateForm() {
         if(!validate(email,emailError,10, true)) status = false;
         
         showValidated(status);
+        if(status===true) {
+            sendMail();
+        }
     }
     catch(error) {
         createHtmlError(error);
     }
+}
+
+async function sendMail() {
+    const formattedFormData = new FormData(form);        
+    formattedFormData.append('chkMelding', chkMelding.checked);
+    formattedFormData.append('chkVennepris', chkVennepris.checked);
+    formattedFormData.append('chkKeyYogaMandag', chkKeyYogaMandag.checked);
+    formattedFormData.append('chkKeyYogaOnsdag', chkKeyYogaOnsdag.checked);
+    formattedFormData.append('ChkMeditativHealing', ChkMeditativHealing.checked);
+    formattedFormData.append('msgbox', msgbox.value);
+
+    const response = await fetch('php/mailApi.php',{
+        method: 'POST',
+        body: formattedFormData
+    });
+    const data = await response.text();
+
+    console.log(data);
+    showUserMailStatus(data.includes("Message successfully sent"));
+}
+
+function showUserMailStatus(success) {
+    let statusText;
+    if(success) {
+        console.log("Mail sent successfully!");
+        statusText = "Mail Sent successfully.";
+    } else {
+        statusText = "Error Sending Mail!!";
+    }
+
+    const mailStatus = document.querySelector(".boks-d");
+    mailStatus.innerHTML += `<div class="mailStatus">`+statusText+`</div>`;
 }
 
 function isAnyActionSelected() {
@@ -63,7 +100,7 @@ function showValidated(status) {
 
     if(status) {
         formValidated.style.display = "block";
-        formValidated.innerHTML = "Message sent....";
+        //formValidated.innerHTML = "Message sent....";
     } else {
         formValidated.style.display = "none";
     }
@@ -122,7 +159,7 @@ function createHtmlError(error) {
                             <img src="/images/404.webp" height="200" style="max-width: 240px">
                             <div class="details-date">An error occurred processing data</div>
                             
-                            <div class="home"><a href="pamelding.html"><h1>Return</h1></a></div>
+                            <div class="home"><a href="pamelding.html"><h1>Reset</h1></a></div>
                             `;
     
     const title = document.querySelector(".title");
