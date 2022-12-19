@@ -262,14 +262,23 @@ nav li {
     .header .title h2 {
         font-size: 1.4em;
     }
+
+    /* hamburger */
+    .fa-3x {
+        font-size: 30px;
+    }
 }
 
 
 @media only screen and (max-width:500px) {
-        h2{
+    h2 {
             letter-spacing: 0em; 
             font-size: 2rem;
             font-family: 'Montserrat', sans-serif;
+    }
+    /* hamburger */
+    .fa-3x {
+        font-size: 25px;
     }
 }
 

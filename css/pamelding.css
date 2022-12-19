@@ -96,6 +96,7 @@ ul {
     "timeslots-container event-container";
     border: 1px solid black;
     margin-top: 50px;
+    width: 100%;
 }
 
 .weekdays,
@@ -130,8 +131,9 @@ ul {
 .timeslots li:after {
     content: "";
     position: absolute;
-    left: 120px;
-    width: 80%;
+    left: 102px;
+    right: 102px;
+    /*width: 80%;*/
     height: 1px;
     background: lightgray;
     z-index: 1;
@@ -204,47 +206,49 @@ ul {
         "calendar-container"
         'boks-d'
         'footer';
-}
+    }
 
-.calendar-container {    
-    grid-area: calendar-container;
-    display: grid;
-    grid-template-columns: 50px auto;
-    grid-template-rows: auto;
-    gap: 1px 1px;
-    grid-template-areas:
-    ". header-calender"
-    "event-container";
-    border: 1px solid black;
-    margin-top: 50px;
-    
-}
-.boks-d h2{
-    font-size: 30px;
-}
-.timeslots li {
-    min-height: 20px;
-}
+    .calendar-container {    
+        grid-area: calendar-container;
+        display: grid;
+        grid-template-columns: 50px auto;
+        grid-template-rows: auto;
+        gap: 1px 1px;
+        grid-template-areas:
+        ". header-calender"
+        "event-container";
+        border: 1px solid black;
+        margin-top: 50px;
+        
+    }
+    .boks-d h2{
+        font-size: 30px;
+    }
+    .timeslots li {
+        min-height: 20px;
+    }
 
-.timeslots li:after {
-    left: 50px;
-    width: cover;
-    display: none;
-}
+    .timeslots li:after {
+        left: 50px;
+        width: cover;
+        display: none;
+    }
 
-.slot-1{
-height: 25px;
-}
+    .slot-1 {
+        height: 25px;
+    }
 
-.slot-2{
-height: 25px;
-}
-.slot{
-    font-size: 8px;
-}
-.boks-c h1{
-font-size: 30px;
-font-style: regular;
-}
+    .slot-2 {
+        height: 25px;
+    }
+
+    .slot {
+        font-size: 8px;
+    }
+
+    .boks-c h1 {
+        font-size: 30px;
+        font-style: regular;
+    }
 }
 

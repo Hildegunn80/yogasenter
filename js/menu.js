@@ -6,6 +6,7 @@
 let pageIcon = "images/SmallLogoBlack.png";
 let menuClass = ".header";
 let siteName = "Stord Yoga"
+let mobileSize = false;
 
 const htmlPages = [
     {
@@ -107,7 +108,8 @@ function addMenu(menu) {
     menu.appendChild(label);
     
     let i = document.createElement("i");
-    i.className = "fas fa-bars fa-4x";
+    i.className = "fas fa-bars fa-3x";
+
     i.setAttribute("aria-hidden","true");
     label.appendChild(i);
     
@@ -132,6 +134,16 @@ function loadMenu() {
 
     document.title = currentPage +" | " + siteName;
 }
+
+window.addEventListener('resize', () => {
+    // Toggle on mobile
+    if (window.innerWidth <= 670) {
+        mobileSize = true;
+    } else {
+        mobileSize = false;
+    }
+
+  });
 
 // load menu automatically..
 window.onload = loadMenu();

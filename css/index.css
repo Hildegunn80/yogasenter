@@ -122,7 +122,7 @@
     min-height: 600px;
     background-size: cover;
     background-position: center;
-    border: 2px solid var(--color-border);
+    /*border: 2px solid var(--color-border);*/
     transition: background 2.0s ease-in-out;
 }
 
@@ -133,7 +133,7 @@
     min-height: 600px;
     background-size: cover;
     background-position: center;
-    border: 2px solid var(--color-border);
+    /*border: 2px solid var(--color-border);*/
     transition: background 2.0s ease-in-out;
 }
 
@@ -151,7 +151,7 @@
     padding-right: 20%;
     letter-spacing: 2px;
     line-height: 25px;
-    border: 2px solid var(--color-border);
+    /*border: 2px solid var(--color-border);*/
 }
 
 .boks-f h2, 
@@ -187,7 +187,7 @@ font-size: 25px;
     min-height: 600px;
     background-size: cover;
     background-position: center;
-    border: 2px solid var(--color-border);
+    /*border: 2px solid var(--color-border);*/
     transition: background 2.0s ease-in-out;
 }
 
