@@ -8,8 +8,8 @@ $address = $_POST['address'];
 // checkboxes
 $chkMelding = $_POST['chkMelding'];
 $chkVennepris = $_POST['chkVennepris'];
-$chkKeyYogaMandag = $_POST['chkKeyYogaMandag'];
-$chkKeyYogaOnsdag = $_POST['chkKeyYogaOnsdag'];
+$chkKeyYogaTirsdag = $_POST['chkKeyYogaTirsdag'];
+$chkKeyYogaTorsdag = $_POST['chkKeyYogaTorsdag'];
 $ChkMeditativHealing = $_POST['ChkMeditativHealing'];
 
 // msgbox from user
@@ -40,8 +40,8 @@ if (!isValueSet($address, "address")) $allValuesPresent = false;
 
 if (!isValueSet($chkMelding, "chkMelding")) $allValuesPresent = false;
 if (!isValueSet($chkVennepris, "chkVennepris")) $allValuesPresent = false;
-if (!isValueSet($chkKeyYogaMandag, "chkKeyYogaMandag")) $allValuesPresent = false;
-if (!isValueSet($chkKeyYogaOnsdag, "chkKeyYogaOnsdag")) $allValuesPresent = false;
+if (!isValueSet($chkKeyYogaTirsdag, "chkKeyYogaTirsdag")) $allValuesPresent = false;
+if (!isValueSet($chkKeyYogaTorsdag, "chkKeyYogaTorsdag")) $allValuesPresent = false;
 if (!isValueSet($ChkMeditativHealing, "ChkMeditativHealing")) $allValuesPresent = false;
 
 if (!isValueSet($msgbox, "msgbox")) $allValuesPresent = false;
@@ -68,12 +68,12 @@ if ($chkVennepris == "true") {
     $message .= "[x] Vi ønsker venne pris....\n";
 }
 
-if ($chkKeyYogaMandag == "true") {
-    $message .= "[x] ønsker delta på Key-Yoga Mandag.\n";
+if ($chkKeyYogaTirsdag == "true") {
+    $message .= "[x] ønsker delta på Key-Yoga Tirsdag.\n";
 }
 
-if ($chkKeyYogaOnsdag == "true") {
-    $message .= "[x] ønsker delta på Key-Yoga Onsdag.\n";
+if ($chkKeyYogaTorsdag == "true") {
+    $message .= "[x] ønsker delta på Key-Yoga Torsdag.\n";
 }
 
 if ($ChkMeditativHealing == "true") {
@@ -97,9 +97,9 @@ try {
         strlen($message) < 4096) {
         echo "Sending mail to: ".$email."\n";
 
-        if (mail("stord.yogasenter@gmail.com",         // din epostadresse
-            "Melding fra stordyogasenter.no",          // emne
-            "Melding fra $name <$email>:\n\n$message", // meldingsteksten
+        if (mail("stord.yogasenter@gmail.com",              // din epostadresse : stord.yogasenter@gmail.com
+            "Melding fra stordyogasenter.no",           // emne
+            "Melding fra $name <$email>:\n\n$message",  // meldingsteksten
             "From: Tilbakemeldingsskjema <noreply@stordyogasenter.no>" // avsender
             )) {
 

@@ -14,8 +14,8 @@ const addressError = document.querySelector("#addressError");
 
 // bind checkboxes
 const chkMelding = document.querySelector("#chkMelding");
-const chkKeyYogaMandag = document.querySelector("#chkKeyYogaMandag");
-const chkKeyYogaOnsdag = document.querySelector("#chkKeyYogaOnsdag");
+const chkKeyYogaTirsdag = document.querySelector("#chkKeyYogaTirsdag");
+const chkKeyYogaTorsdag = document.querySelector("#chkKeyYogaTorsdag");
 const chkVennepris = document.querySelector("#chkVennepris");
 const ChkMeditativHealing = document.querySelector("#ChkMeditativHealing");
 
@@ -49,8 +49,8 @@ async function sendMail() {
     const formattedFormData = new FormData(form);        
     formattedFormData.append('chkMelding', chkMelding.checked);
     formattedFormData.append('chkVennepris', chkVennepris.checked);
-    formattedFormData.append('chkKeyYogaMandag', chkKeyYogaMandag.checked);
-    formattedFormData.append('chkKeyYogaOnsdag', chkKeyYogaOnsdag.checked);
+    formattedFormData.append('chkKeyYogaTirsdag', chkKeyYogaTirsdag.checked);
+    formattedFormData.append('chkKeyYogaTorsdag', chkKeyYogaTorsdag.checked);
     formattedFormData.append('ChkMeditativHealing', ChkMeditativHealing.checked);
     formattedFormData.append('msgbox', msgbox.value);
 
@@ -80,8 +80,8 @@ function showUserMailStatus(success) {
 function isAnyActionSelected() {
     if (ChkMeditativHealing.checked) return true;
     if (chkMelding.checked) return true;
-    if (chkKeyYogaMandag.checked) return true;
-    if (chkKeyYogaOnsdag.checked) return true;
+    if (chkKeyYogaTirsdag.checked) return true;
+    if (chkKeyYogaTorsdag.checked) return true;
     if (chkVennepris.checked) return true;
     
     return false;
@@ -100,7 +100,6 @@ function showValidated(status) {
 
     if(status) {
         formValidated.style.display = "block";
-        //formValidated.innerHTML = "Message sent....";
     } else {
         formValidated.style.display = "none";
     }

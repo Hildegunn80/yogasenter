@@ -161,15 +161,15 @@ ul {
 }
 
 .slot-1 {
-    height: 70px;    
-    grid-row: 23;
-    grid-column: 1;
+    height: 90px;    
+    grid-row: 15;
+    grid-column: 2;
 }
 
 .slot-2 {
-    height: 70px;    
-    grid-row: 15;
-    grid-column: 3;
+    height: 90px;    
+    grid-row: 23;
+    grid-column: 4;
 }
 
 /* form valid*/
