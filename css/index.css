@@ -12,6 +12,7 @@
     'boks-g boks-h'
     'banner-2 banner-2'
     'boks-j boks-i'
+    'boks-k boks-l'
     'footer footer';
     background-color: var(--color-bg);
     text-align: center;
@@ -139,7 +140,8 @@
 
 .boks-f, 
 .boks-g,
-.boks-i {
+.boks-i, 
+.boks-k {
     grid-area: boks-f;
     display: flex;
     flex-direction: column;
@@ -156,12 +158,14 @@
 
 .boks-f h2, 
 .boks-g h2,
-.boks-i h2{
+.boks-i h2,
+.boks-k h2{
 line-height: 25 px;
 font-size: 25px;
 }
 .boks-f a,
-.boks-g a{
+.boks-g a,
+.boks-k a{
     background-color: var(--color-button);
     border: var(--color-ascent) solid 2px ;
     max-width: 100px;
@@ -213,6 +217,25 @@ font-size: 25px;
     grid-area:boks-j;
 }
 
+.boks-k {
+    grid-area:boks-k ;}
+
+
+.boks-l {
+    grid-area:boks-l;
+}
+
+.boks-l {
+    grid-area: boks-l;
+    position: relative;
+    background-image:url(../images/KeyYogaTop.jpg);
+    min-height: 600px;
+    background-size: cover;
+    background-position: center;
+    /*border: 2px solid var(--color-border);*/
+
+}
+
 @media screen and (max-width: 1000px) {
     .gridcontainer {
         grid-template-columns: 99%;
@@ -226,7 +249,9 @@ font-size: 25px;
         'boks-h'
         'banner-2'
         'boks-i'
-        'boks-j'        
+        'boks-j' 
+        'boks-k' 
+        'boks-l'   
         'footer';
         background-color: var(--color-bg);
         text-align: center;

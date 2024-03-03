@@ -58,6 +58,7 @@
     right: 20%;
     bottom: 30%;
 }
+
 .boks-b h2{
     background-color:rgb(173, 216, 230,0.4);
     max-height: 130px;
@@ -99,16 +100,14 @@
 }
 
 
-.boks-e{
-        position: relative;
-        background-image:url(../images/67782902_2421438718092035_536827141988286464_n.jpg);
-        min-height: 600px;
-        background-size: cover;
-        background-position: center;
-        border: 2px solid var(--color-border);
-    }
-
-
+.boks-e {
+    position: relative;
+    background-image:url(../images/67782902_2421438718092035_536827141988286464_n.jpg);
+    min-height: 600px;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid var(--color-border);
+}
 
 .boks-c,
 .boks-e,

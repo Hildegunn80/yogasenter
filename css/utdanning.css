@@ -1,0 +1,224 @@
+.gridcontainer {
+    min-height: 100%;
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: 49% 25% 25%;
+    grid-template-areas: 
+    'header header header'
+    'boks-b boks-b boks-b'
+    'boks-d boks-d boks-c'
+    'boks-d boks-d boks-c'
+    'footer footer footer';
+    background-color: var(--color-bg);
+    text-align: center;
+}
+
+.boks-b {
+    grid-area: boks-b;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    min-height: 800px;
+    /*align-items:calc(0) ;*/
+    justify-content: center;
+    background: url(../images/KeyYogaTop.jpg); /* fallback */
+    background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.5)), url(../images/KeyYogaTop.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+h2{
+    color: black;
+}
+
+ .boks-b h1 {
+     letter-spacing: 0.1em; 
+     font-size:4.5rem;
+     position: absolute;
+     margin-top: 0%;
+     color: whitesmoke;
+     justify-content: center;
+     right: 20%;
+     top: 20%;
+ }
+
+.boks-c,
+.boks-d {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    text-align: left;
+    
+}
+
+.boks-c {
+    grid-area: boks-c;
+    background-color: white;
+    color:black;
+    text-align: left;
+    padding-left: 10px;
+    letter-spacing: 2px;
+    border: 2px solid rgb(200, 193, 193);
+    font-weight: bold;
+    font-size: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5px;
+
+}
+
+.jarle, 
+.aud {
+    border:10px solid whitesmoke;  
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+}
+
+.kursdato {
+    background-color: white;
+    padding-left: 8px;
+}
+
+.kursdato h3 {
+    color:#225a5e;
+}
+
+#inkludert,
+#påmelding {
+    font-weight: bold;
+}
+
+#italic {
+    font-style: italic;
+}
+
+
+.image_2 img, 
+.image_1 img{
+    max-height: 400px; 
+    width: 300px;
+}
+
+.image_3 img {
+    max-height: 600px; 
+    width: 600px;
+}
+
+.tekst {
+    font-size: 14px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    max-width: 300px;
+    letter-spacing: 2px;
+    line-height: 25px;
+}
+
+.tekst a {
+    font-size: 14px;
+}
+
+.boks-c h2{
+    font-size: 20px;
+}
+
+.boks-d {
+    padding-top: 20px;
+    grid-area: boks-d;
+    padding-left: 20%;
+    padding-right: 20%;
+    letter-spacing: 2px;
+    line-height: 25px;
+    border: 2px solid rgb(200, 193, 193);
+    background-color:  whitesmoke;;
+}
+
+@media only screen and (max-width: 1000px) {
+    .gridcontainer {
+        min-height: 100%;
+        display: grid;
+        grid-gap: 2px;
+        grid-template-columns: 99%;
+        grid-template-areas: 
+        'header'
+        'boks-b'
+        'boks-d' 
+        'boks-c'
+        'boks-e'
+        'banner'
+        'boks-h'     
+        'footer';
+        background-color: var(--color-bg);
+        text-align: center;
+    }
+    .boks-b {        
+        min-height: 370px;     
+    }
+
+    .boks-b h1 {
+        font-size: 45px;
+        top: 20%;
+    }
+
+    .boks-c {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .boks-f,
+    .boks-d,
+    .boks-g
+    .boks-c{
+        margin-right:0px;
+    }
+
+    .banner h2{
+        font-size: 30px;
+        font-style: italic;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .boks-b {        
+        min-height: 250px;        
+    }
+
+    .boks-f,
+    .boks-d,
+    .boks-g,
+    .boks-c {
+        margin-right:0px;
+    }
+    
+    .boks-b h1 {
+        font-size: 32px;
+        top: 15%;
+    }
+
+    .boks-c {
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .image_3 img{
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 670px) {   
+    .boks-b h1 {
+        font-size: 32px;
+        top: 15%;
+    }
+}
+
+@media only screen and (max-width: 550px) {   
+    .boks-d{
+        background-color:white;
+    }
+}
