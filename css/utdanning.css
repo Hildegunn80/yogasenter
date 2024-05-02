@@ -210,6 +210,11 @@ h2{
     }
 }
 
+.strong {
+    font-style:bolder;
+}
+
+
 @media only screen and (max-width: 670px) {   
     .boks-b h1 {
         font-size: 32px;

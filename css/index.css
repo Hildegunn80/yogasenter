@@ -7,12 +7,12 @@
     'header header'
     'boks-b boks-b'
     'banner banner'
-    'boks-c boks-d'
+    'boks-k boks-l'
     'boks-e boks-f'
     'boks-g boks-h'
     'banner-2 banner-2'
     'boks-j boks-i'
-    'boks-k boks-l'
+    'boks-d boks-c'
     'footer footer';
     background-color: var(--color-bg);
     text-align: center;
@@ -243,15 +243,15 @@ font-size: 25px;
         'header'
         'boks-b'
         'banner'
-        'boks-f'
-        'boks-e'
+        'boks-k'
+        'boks-l'
         'boks-g'
         'boks-h'
         'banner-2'
         'boks-i'
         'boks-j' 
-        'boks-k' 
-        'boks-l'   
+        'boks-f' 
+        'boks-e'   
         'footer';
         background-color: var(--color-bg);
         text-align: center;
