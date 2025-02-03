@@ -119,7 +119,7 @@ h2{
 }
 
 .tekst a {
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .boks-c h2{
@@ -136,6 +136,24 @@ h2{
     border: 2px solid rgb(200, 193, 193);
     background-color:  whitesmoke;;
 }
+
+
+ .boks-d a {
+   background-color:  var(--color-button);
+    max-width: 160px;
+    align-self: center;
+    border-radius: 8px;
+    border: 2px solid whitesmoke;
+    font-size: 20px;
+    color: white;
+ }
+
+ .boks-d a:hover {
+    background-color: var(--color-button-hover)
+   
+ }
+
+
 
 @media only screen and (max-width: 1000px) {
     .gridcontainer {
