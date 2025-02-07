@@ -238,8 +238,12 @@ h2{
         font-size: 32px;
         top: 15%;
     }
+
+    .kursdatoer {
+        font-size: 15px;
+    }
     .email {
-        font-size: 9px;
+        font-size: 15px;
     }
 }
 
