@@ -217,8 +217,8 @@ font-size: 25px;
 }
 
 .boks-k {
-    grid-area:boks-k ;}
-
+    grid-area:boks-k ;
+}
 
 .boks-l {
     grid-area:boks-l;
@@ -242,8 +242,6 @@ font-size: 25px;
         'header'
         'boks-b'
         'banner'
-        'boks-k'
-        'boks-l'
         'boks-g'
         'boks-h'
         'banner-2'

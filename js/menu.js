@@ -24,8 +24,7 @@ const htmlPages = [
     {
         file: "Key-yoga.html",
         name: "Key-yoga"
-    },
-    
+    },    
     {
         file: "priser.html",
         name: "Pris"
